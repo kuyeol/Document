@@ -7,10 +7,15 @@
                  start-page="starter.md">
 
     <toc-element topic="starter.md"/>
-    <toc-element topic="Tutorial.md"/>
-    <toc-element toc-title="New Section">
-        <toc-element toc-title="New Section">
+
+    <toc-element toc-title="java">
+        <toc-element toc-title="Jpa">
+        <toc-element toc-title="Spring">
             <toc-element topic="Empty-MD-Topic.md"/>
+        </toc-element>
+            <toc-element toc-title="Quarkus">
+                <toc-element topic="Tutorial.md"/>
+            </toc-element>
         </toc-element>
         <toc-element topic="How-to.md"/>
     </toc-element>

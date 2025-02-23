@@ -3,7 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="in"
-                 name="Instance Name"
+                 name="Documentation_By_Ung"
                  start-page="starter.md">
 
     <toc-element topic="starter.md"/>

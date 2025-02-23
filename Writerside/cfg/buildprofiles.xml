@@ -5,7 +5,7 @@
 
     <variables>
       <web-root>https://kuyeol.github.io/Document</web-root>
-        <download-page>https://github.com/kuyeol/Document/Writerside/</download-page>
+        <download-page>https://github.com/kuyeol/Document/edit/master/Writerside/topics/</download-page>
         <download-title>Edit</download-title>
         <showDownloadButton>true</showDownloadButton>
         <primary-color>strawberry</primary-color>

@@ -3,10 +3,45 @@
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <variables></variables>
+    <variables>
+      <web-root>https://kuyeol.github.io/Document</web-root>
+        <download-page>https://github.com/kuyeol/Document/Writerside/</download-page>
+        <download-title>Edit</download-title>
+        <showDownloadButton>true</showDownloadButton>
+        <primary-color>strawberry</primary-color>
+        <header-logo>writerside.svg</header-logo>
+        <custom-favicons>https://www.jetbrains.com/icon-512.png</custom-favicons>
+      <color-preset>vivid</color-preset>
+      <contribute-url>https://github.com/kuyeol/Document/edit/master/</contribute-url>
+   <resizable-sidebar>true</resizable-sidebar>
+    <enable-contribution>﻿true</enable-contribution>
+      <offline-docs>true</offline-docs>
+      <generate-canonicals>true</generate-canonicals>﻿
+    </variables>
+  
+<footer>
+        <social type="blog" href="https://blog.jetbrains.com/writerside/">Writerside Blog</social>
+        <link href="https://github.com/kuyeol/Document/issues">Issue tracker</link>
+        <link href="mailto:zimop12@gmail.com">Contact us</link>
+<social type="email" href="zimop12@gmail.com">Send us an email</social>
+        <copyright>Ung_Yeol</copyright>
+    </footer>
+
+  
+  
     <build-profile instance="in">
+      <sitemap priority="0.35" change-frequency="monthly"/>
         <variables>
-            <noindex-content>true</noindex-content>
+            <noindex-content>false</noindex-content>
+            <product-web-url>https://kuyeol.github.io/Document/starter.html</product-web-url>
+          
+            <og-image>https://resources.jetbrains.com/storage/products/writerside/img/meta/preview.png</og-image>
+            <images-prefix-override>https://my.company.com/images/</images-prefix-override>
+
+<algolia-api-key>0fbf0980df964160f74f08702e822417</algolia-api-key>
+     <algolia-id>GZ7D9RY8R4</algolia-id>     
+        <algolia-index>prod_INDEX_NAME</algolia-index>  
+          <algolia-show-logo>true ﻿</algolia-show-logo>﻿
         </variables>
     </build-profile>
 

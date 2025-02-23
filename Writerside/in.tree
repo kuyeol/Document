@@ -3,40 +3,11 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="in"
-                 name="Documentation_By_Ung"
-                 start-page="Section-Starting-Page.topic">
+                  name="Documentation_By_Ung"
+                  start-page="Section-Starting-Page.topic">
 
     <toc-element topic="starter.md"/>
     <toc-element topic="API_Reference.topic">
-        <toc-element topic="Schemas.topic">
-            <toc-element topic="ResponseEntity.topic"/>
-            <toc-element topic="HttpHeaders.topic"/>
-            <toc-element topic="Unit.topic"/>
-            <toc-element topic="Barracks.topic"/>
-        </toc-element>
-        <toc-element topic="GET_android_topics.topic"/>
-        <toc-element topic="GET_android_news_id_.topic"/>
-        <toc-element topic="POST_android_topic.topic"/>
-        <toc-element topic="POST_android_news.topic"/>
-        <toc-element topic="GET_terran_hi.topic"/>
-        <toc-element topic="GET_terran_avro_id_.topic"/>
-        <toc-element topic="GET_terran_findID_id_.topic"/>
-        <toc-element topic="GET_terran_findcommand_id_.topic"/>
-        <toc-element topic="GET_terran_findBarrak_id_.topic"/>
-        <toc-element topic="GET_terran_list_page_.topic"/>
-        <toc-element topic="GET_terran_accessTest.topic"/>
-        <toc-element topic="GET_terran.topic"/>
-        <toc-element topic="GET_terran_NEW.topic"/>
-        <toc-element topic="POST_terran_toavro.topic"/>
-        <toc-element topic="POST_terran_ping.topic"/>
-        <toc-element topic="GET_zerg_hi.topic"/>
-        <toc-element topic="GET_zerg_avro_id_.topic"/>
-        <toc-element topic="GET_zerg_findID_id_.topic"/>
-        <toc-element topic="GET_zerg_findBarrak_id_.topic"/>
-        <toc-element topic="GET_zerg_list_page_.topic"/>
-        <toc-element topic="POST_zerg_toavro.topic"/>
-        <toc-element topic="POST_zerg_ping.topic"/>
-        <toc-element topic="GET_.topic"/>
     </toc-element>
     <toc-element topic="Section-Starting-Page.topic"/>
     <toc-element toc-title="Kotlin">
@@ -51,13 +22,13 @@
             <toc-element topic="Entity_Mapping.md"/>
         </toc-element>
         <toc-element toc-title="Spring">
-
-            <toc-element topic="Troubleshooting.md"/>
+            <toc-element topic="Spring_Overview.md"/>
         </toc-element>
-            <toc-element toc-title="Quarkus">
-                <toc-element topic="Tutorial.md"/>
-            </toc-element>
-
-
+        <toc-element toc-title="Quarkus">
+            <toc-element topic="Tutorial.md"/>
+        </toc-element>
+    </toc-element>
+    <toc-element toc-title="Issue">
+        <toc-element topic="Troubleshooting.md"/>
     </toc-element>
 </instance-profile>

@@ -9,9 +9,10 @@
         <download-title>Edit</download-title>
         <showDownloadButton>true</showDownloadButton>
         <primary-color>strawberry</primary-color>
-        <header-logo>writerside.svg</header-logo>
+        <header-logo>note.svg</header-logo>
         <custom-favicons>https://www.jetbrains.com/icon-512.png</custom-favicons>
       <color-preset>vivid</color-preset>
+      
       <contribute-url>https://github.com/kuyeol/Document/edit/master/</contribute-url>
    <resizable-sidebar>true</resizable-sidebar>
     <enable-contribution>﻿true</enable-contribution>

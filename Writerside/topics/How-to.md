@@ -1,4 +1,4 @@
-# How to
+# Create API Reference
 
 A How-to article is an action-oriented type of document.
 It explains how to perform a specific task or solve a problem, and usually contains a sequence of steps.
@@ -12,7 +12,8 @@ what they need to perform it for, or define the target audience of the doc.
 >
 {style="note"}
 
-
+# 
+<api-doc openapi-path="./../openapi.yaml" />
 
 ## Before you start
 

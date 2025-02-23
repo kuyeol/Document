@@ -5,11 +5,14 @@ It explains how to perform a specific task or solve a problem, and usually conta
 Start with a short introductory paragraph that explains what users will accomplish by following this procedure,
 what they need to perform it for, or define the target audience of the doc.
 
-> **Highlight important information**
+
+
 >
 > You can change the element to *tip* or *warning* by renaming the style attribute below.
 >
 {style="note"}
+
+
 
 ## Before you start
 

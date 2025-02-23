@@ -10,4 +10,8 @@
         <description>Created after removal of "Empty MD Topic" from Instance Name</description>
         <accepts>Empty-MD-Topic.html</accepts>
     </rule>
+    <rule id="5dd2d634">
+        <description>Created after removal of "API reference_1" from Documentation_By_Ung</description>
+        <accepts>API-reference.html</accepts>
+    </rule>
 </rules>

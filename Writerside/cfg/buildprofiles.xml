@@ -11,7 +11,13 @@
         <primary-color>strawberry</primary-color>
         <custom-favicons>https://www.jetbrains.com/icon-512.png</custom-favicons>
       <color-preset>vivid</color-preset>
-      
+                  
+            <product-web-url>https://kuyeol.github.io/Document/starter.html</product-web-url>
+           
+<algolia-id>GZ7D9RY8R4</algolia-id>
+    <algolia-index>MY_INDEX</algolia-index>
+    <algolia-api-key>5e08191207a7445eb8291c3a259c7658</algolia-api-key>
+    <algolia-show-logo>true</algolia-show-logo>
       ﻿
     </variables>
   
@@ -39,10 +45,7 @@
             <product-web-url>https://kuyeol.github.io/Document/starter.html</product-web-url>
             <og-image>https://resources.jetbrains.com/storage/products/writerside/img/meta/preview.png</og-image>
             <images-prefix-override>https://my.company.com/images/</images-prefix-override>
-<algolia-id>GZ7D9RY8R4</algolia-id>
-    <algolia-index>MY_INDEX</algolia-index>
-    <algolia-api-key>5e08191207a7445eb8291c3a259c7658</algolia-api-key>
-    <algolia-show-logo>true</algolia-show-logo>
+
      ﻿
         </variables>
     </build-profile>

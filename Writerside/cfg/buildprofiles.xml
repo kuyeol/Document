@@ -20,7 +20,7 @@
     <algolia-show-logo>true</algolia-show-logo>
       
       ﻿<contribute-url> https://github.com/kuyeol/Document/edit/master/Writerside/  </contribute-url>
-
+<enable-contribution>﻿true</enable-contribution>
       <custom-favicons>icon16.svg,icon32.svg,icon96.svg,icon300.svg,icon500.svg</custom-favicons>
     </variables>
   

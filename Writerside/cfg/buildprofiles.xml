@@ -11,7 +11,7 @@
         <primary-color>strawberry</primary-color>
         <custom-favicons>https://www.jetbrains.com/icon-512.png</custom-favicons>
       <color-preset>vivid</color-preset>
-                  
+                  <content-max-width>1900</content-max-width>
             <product-web-url>https://kuyeol.github.io/Document/starter.html</product-web-url>
            
 <algolia-id>GZ7D9RY8R4</algolia-id>

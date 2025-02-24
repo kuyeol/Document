@@ -18,7 +18,8 @@
     <algolia-index>MY_INDEX</algolia-index>
     <algolia-api-key>5e08191207a7445eb8291c3a259c7658</algolia-api-key>
     <algolia-show-logo>true</algolia-show-logo>
-      ﻿
+      
+      ﻿<contribute-url> https://github.com/kuyeol/Document/edit/master/Writerside/  </contribute-url>
     </variables>
   
 <footer>

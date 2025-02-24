@@ -41,7 +41,7 @@
             <images-prefix-override>https://my.company.com/images/</images-prefix-override>
 <algolia-id>GZ7D9RY8R4</algolia-id>
     <algolia-index>MY_INDEX</algolia-index>
-    <algolia-api-key>4d885dff71733c4e9528da885f793574</algolia-api-key>
+    <algolia-api-key>0fbf0980df964160f74f08702e822417</algolia-api-key>
     <algolia-show-logo>true</algolia-show-logo>
      ﻿
         </variables>

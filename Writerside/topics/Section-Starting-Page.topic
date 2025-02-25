@@ -20,7 +20,7 @@
         <description>
             Add an introductory paragraph: explain what this section is about in 2-3 short sentences.
         </description>
-
+<script src="https://gist.github.com/kuyeol/6a59ee2ffe6c18a4f307e6adb62ff944.js"></script>
 
         <!--    Add up to 2 topics that you want to promote. Use the "type" attribute to select an icon.    -->
         <spotlight>
@@ -31,6 +31,7 @@
         <!--    Add several topics that are most important for this section.    -->
         <primary>
             <title>Get started</title>
+<script src="https://gist.github.com/kuyeol/6a59ee2ffe6c18a4f307e6adb62ff944.js"></script>
             <a href=""/>
             <a href="" summary="With a custom card summary"/>
             <a href="">Custom card title</a>

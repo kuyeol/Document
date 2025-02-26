@@ -2,49 +2,51 @@
 <!DOCTYPE buildprofiles SYSTEM "https://resources.jetbrains.com/writerside/1.0/build-profiles.dtd">
 <buildprofiles xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/build-profiles.xsd"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-<sitemap priority="0.35" change-frequency="monthly"/>
+    <sitemap priority="0.35" change-frequency="monthly"/>
     <variables>
-      <web-root>https://kuyeol.github.io/Document</web-root>
+        <web-root>https://kuyeol.github.io/Document</web-root>
+        <product-web-url>https://kuyeol.github.io/Document</product-web-url>
         <download-page>https://github.com/kuyeol/Document/edit/master/Writerside/topics/</download-page>
         <download-title>Edit</download-title>
         <showDownloadButton>true</showDownloadButton>
-        <primary-color>strawberry</primary-color>
-        <custom-favicons>https://www.jetbrains.com/icon-512.png</custom-favicons>
-      <color-preset>vivid</color-preset>
-                  <content-max-width>1900</content-max-width>
-            <product-web-url>https://kuyeol.github.io/Document/starter.html</product-web-url>
-<algolia-id>GZ7D9RY8R4</algolia-id>
-    <algolia-index>MY_INDEX</algolia-index>
-    <algolia-api-key>5e08191207a7445eb8291c3a259c7658</algolia-api-key>
-    <algolia-show-logo>true</algolia-show-logo>
-      <sitemap priority="0.35" change-frequency="monthly"/>
-      ﻿<contribute-url> https://github.com/kuyeol/Document/edit/master/Writerside/  </contribute-url>
-<enable-contribution>﻿true</enable-contribution>
-      <custom-favicons>icon16.svg,icon32.svg,icon96.svg,icon300.svg,icon500.svg</custom-favicons>
-<resizable-sidebar>true</resizable-sidebar>
-<offline-docs>true</offline-docs>
-      <generate-canonicals>true</generate-canonicals>
-<noindex-content>false</noindex-content>
-            <product-web-url>https://kuyeol.github.io/Document</product-web-url>
+        <color-preset>vivid</color-preset>
+        <content-max-width>1900</content-max-width>
+
+        <contribute-url>https://github.com/kuyeol/Document/edit/master/Writerside/</contribute-url>
+<!--        <custom-favicons>note500.svg,note32.svg</custom-favicons>-->
+        <resizable-sidebar>true</resizable-sidebar>
+        <offline-docs>true</offline-docs>
+        <generate-canonicals>true</generate-canonicals>
+
+        <algolia-id>GZ7D9RY8R4</algolia-id>
+        <algolia-index>MY_INDEX</algolia-index>
+        <algolia-api-key>5e08191207a7445eb8291c3a259c7658</algolia-api-key>
+        <algolia-show-logo>true</algolia-show-logo>
+        <enable-contribution>true</enable-contribution>
+
     </variables>
-  
-<footer>
+
+    <footer>
         <link href="https://github.com/kuyeol/Document/issues">Issue tracker</link>
         <link href="mailto:zimop12@gmail.com">Contact us</link>
-<social type="email" href="zimop12@gmail.com">Send us an email</social>
+        <social type="email" href="zimop12@gmail.com">Send us an email</social>
         <copyright>Ung_Yeol</copyright>
     </footer>
 
-  
-  
+
     <build-profile instance="in">
-      
+
         <variables>
-          
+            <noindex-content>false</noindex-content>
+            <primary-color>strawberry</primary-color>
+            <custom-css>custom.css</custom-css>
 
-      
 
-     ﻿
+
+
+
+
+
         </variables>
     </build-profile>
 

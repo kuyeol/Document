@@ -16,5 +16,5 @@
 >              -  `JetNews` 로 변경
 
 
-**companion** [코틀린 키워드 추가](https://kuyeol.github.io/Document/kt_keywords.html)
+**companion** [코틀린 키워드 추가](https://kuyeol.github.io/Document/kt-keywords.html)
                

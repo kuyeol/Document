@@ -23,6 +23,7 @@
 
 <tabs>
   <tab id="code" title="코드">
+    <p>
 <code-block lang="kotlin"> 
  class Person(val name: String) {
         val children: MutableList&lt;Person&gt; = mutableListOf()
@@ -31,6 +32,7 @@
         }
     } 
 </code-block>
+      </p>
 </tab>
     <tab id="detail" title="설명">
 <code-block lang="kotlin"> 

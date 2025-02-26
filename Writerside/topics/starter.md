@@ -35,25 +35,21 @@ Pythagorean theorem: <math>x^2 + y^2 = z^2</math>
 <primary-label ref="label"/>
 <secondary-label ref="wip"/>
 <secondary-label ref="beta"/>
-<primary-label ref="jetbrains"/>
 <secondary-label ref="2023.3"/>
 <secondary-label ref="experimental"/>
 <procedure>
 <step>
-</step>
 This is a labeled topic about some Beta version of an unfinished feature.
+</step>
 
 </procedure>
 
-<snippet id="connect-to-db">
-    <procedure title="Connect to database">
-        <title instance="web">Connect to database in web application</title>
-        <title instance="mob">Connect to database in mobile application</title>
-        <title filter="mysql">Connection to MySQL</title>
-        <title filter="postgres">Connection to PostgreSQL</title>
-        <step>...</step>
-    </procedure>
-</snippet>
+
+<procedure title="Connect to database">
+<title instance="in">Connect to database in web application</title>
+<step>...</step>
+</procedure>
+
 
 # Some chapter
 
@@ -126,26 +122,27 @@ Send an <tooltip term="HTTP">HTTP</tooltip> request.
 </tabs>
 
 <procedure title="Some procedure" id="some_procedure" >
-<code-block lang="kotlin" collapsible="true" collapsed-title="Person.kt">
+
+<code-block lang="kotlin" collapsible="true" collapsed-title="Person1.kt">
     class Person(val name: String) {
-        val children: MutableList<Person> = mutableListOf()
+        val children: MutableList Person = mutableListOf()
 
         constructor(name: String, parent: Person) : this(name) {
             parent.children.add(this)
         }
     }
-
 </code-block>
+
 <code-block lang="kotlin" collapsible="true" collapsed-title="Person.kt">
     class Person(val name: String) {
-        val children: MutableList<Person> = mutableListOf()
+        val children: MutableList Person = mutableListOf()
 
         constructor(name: String, parent: Person) : this(name) {
             parent.children.add(this)
         }
     }
-
 </code-block>
+
 </procedure>
 ## Add new topics
 You can create empty topics, or choose a template for different types of content that contains some boilerplate structure to help you get started:

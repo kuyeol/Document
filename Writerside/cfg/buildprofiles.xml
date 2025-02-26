@@ -13,7 +13,8 @@
         <content-max-width>1900</content-max-width>
 
         <contribute-url>https://github.com/kuyeol/Document/edit/master/Writerside/</contribute-url>
-<!--        <custom-favicons>note500.svg,note32.svg</custom-favicons>-->
+        <enable-contribution>true</enable-contribution>
+
         <resizable-sidebar>true</resizable-sidebar>
         <offline-docs>true</offline-docs>
         <generate-canonicals>true</generate-canonicals>
@@ -22,7 +23,7 @@
         <algolia-index>MY_INDEX</algolia-index>
         <algolia-api-key>5e08191207a7445eb8291c3a259c7658</algolia-api-key>
         <algolia-show-logo>true</algolia-show-logo>
-        <enable-contribution>true</enable-contribution>
+
 
     </variables>
 
@@ -39,10 +40,9 @@
         <variables>
             <noindex-content>false</noindex-content>
             <primary-color>strawberry</primary-color>
+            <header-logo>note500.svg</header-logo>
+            <custom-favicons>note500.svg</custom-favicons>
             <custom-css>custom.css</custom-css>
-
-
-
 
 
 

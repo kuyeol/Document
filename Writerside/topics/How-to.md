@@ -12,7 +12,7 @@ what they need to perform it for, or define the target audience of the doc.
 >
 {style="note"}
 
-# 
+
 <api-doc openapi-path="./../openapi.yaml" />
 
 ## Before you start

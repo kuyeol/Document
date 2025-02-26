@@ -1,51 +1,55 @@
-:root {
-
-}
-
-/* make the border for images transparent with a 30px radius */
-.article__img {
-    border-radius: 30px !important;
-    border: none;
-}
+/* "Last modified" 텍스트 스타일 */
 
 
 
-.title__content {
-    font-family: "Comic Sans MS";
-    font-weight: 600;
-}
 
-.article__p {
-    font-family: "Monaco";
-    font-weight:500
-}
-
-
-.page-footer .page-info {
-  display: flex;
-  flex-direction: column; /* 기본적으로 세로 배치 (모바일) */
-  align-items: flex-start; /* 왼쪽 정렬 */
-  gap: 10px;
-}
-
-@media (min-width: 768px) { /* 화면 너비가 768px 이상일 때 (태블릿/데스크탑) */
-  .page-footer .page-info {
-    flex-direction: row; /* 가로 배치 */
-    justify-content: space-between; /* 양쪽 끝 정렬 */
-  }
-}
-
-/* (2) */
-.footer-container {
+/* "Edit page" 링크 스타일 (버튼 모양)*/
+.sub-title__edit-info .sub-title__editing-link {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+
+
 }
 
-@media (min-width: 768px) {
-    .footer-container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+
+
+.sub-title.sub-title--related-h1 .sub-title__edit-info {
+ position: fixed;
+ flex-direction: column;
+ display: flex;
+ align-items: left;
+  right: 14vw;
+    top: 10vh;
 }
+
+
+.sub-title__edit-info .sub-title__editing-link:hover {
+    background-color: #ffffff;
+    color:#000000;
+ }
+
+/* 날짜 */
+.sub-title__edit-info  {
+   font-size:8px;
+}
+
+/*에디트 버튼 */
+.sub-title__editing-link {
+    display:fixed;
+    padding: 3px;
+    background-color: #007bff;
+    border-radius: 8px;
+   font-size:3em;
+   text-align:center;
+   color: #ffffff;
+}
+
+.app__article { /* 또는 적절한 상위 요소 */
+    padding-bottom: 80px; /* 버튼 높이 + 여유 공간 */
+}
+
+

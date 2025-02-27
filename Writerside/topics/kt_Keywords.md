@@ -60,3 +60,26 @@
     </tab>
 </tabs>
 </procedure>
+
+
+<procedure>
+  <h1> Class</h1>
+ 클래스 Any 를 상속받음
+  Any에 포함된 메서드
+  equals , hashcode ,toString
+
+  
+</procedure>
+
+<procedure>
+  <h1> Data Class</h1>
+ Pojo 객체와 비슷한 인스턴스
+  자바에 레코드와 사용이 유사하다
+일반적으로 변수를 파라미터로 전달하여 생성
+  <code-block lang="kotlin">
+data class AnyPojo(val para:Type )
+    
+  </code-block>
+
+  
+</procedure>

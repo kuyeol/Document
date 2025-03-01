@@ -4,5 +4,5 @@
 
 # Open Api
 
-<api-doc openapi-path="../../nim-llm.openapi.yaml"/>
+<api-doc openapi-path="./../nim-llm.openapi.yaml"/>
 

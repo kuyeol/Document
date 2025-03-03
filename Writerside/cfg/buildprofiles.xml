@@ -6,8 +6,8 @@
     <variables>
         <web-root>https://kuyeol.github.io/Document</web-root>
         <product-web-url>https://kuyeol.github.io/Document</product-web-url>
-        <download-page>https://github.com/kuyeol/Document/edit/master/Writerside/topics/</download-page>
-        <download-title>Edit</download-title>
+        <download-page>https://github.com/kuyeol/Document/new/master/Writerside/topics</download-page>
+        <download-title>New</download-title>
         <showDownloadButton>true</showDownloadButton>
         <color-preset>vivid</color-preset>
         <content-max-width>1900</content-max-width>
@@ -18,13 +18,6 @@
         <resizable-sidebar>true</resizable-sidebar>
         <offline-docs>true</offline-docs>
         <generate-canonicals>true</generate-canonicals>
-
-        <algolia-id>GZ7D9RY8R4</algolia-id>
-        <algolia-index>MY_INDEX</algolia-index>
-        <algolia-api-key>5e08191207a7445eb8291c3a259c7658</algolia-api-key>
-        <algolia-show-logo>true</algolia-show-logo>
-
-
     </variables>
 
     <footer>

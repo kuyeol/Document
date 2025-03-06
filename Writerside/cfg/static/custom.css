@@ -5,14 +5,13 @@
 
 /* "Edit page" 링크 스타일 (버튼 모양)*/
 .sub-title__edit-info .sub-title__editing-link {
-
-    padding: 8px 12px;
     background-color: #007bff;
     color: white;
-    text-decoration: none;
     border-radius: 6px;
-      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
-        border: 1px solid #ccc;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    padding: 0.5em 0px;
+    padding: 0.3em 0em;
 }
 
 
@@ -22,9 +21,9 @@
  flex-direction: column;
  display: flex;
  align-items: left;
-  right: 6vw;
-    top: 7vh;
-    padding:1vw;
+  right: 3vw;
+   top: 7vh;
+   padding:0.1vw;
 }
 
 .sub-title__edit-info .sub-title__editing-link:hover {
@@ -32,29 +31,26 @@
     color:#000000;
  }
 
-/* 날짜 */
-.sub-title__edit-info  {
-   font-size:8px;
-}
+
 
 /*에디트 버튼 */
 .sub-title__editing-link {
-    padding: 3px;
     background-color: #007bff;
-    border-radius: 8px;
-   font-size:3em;
+    border-radius: 1em;
    text-align:center;
    color: #ffffff;
+    font-size:1.6em;
 }
 
+
+
+
 .app__article { /* 또는 적절한 상위 요소 */
-    padding-bottom: 80px; /* 버튼 높이 + 여유 공간 */
+    padding-bottom: 20px; /* 버튼 높이 + 여유 공간 */
 }
 
 aside.layout { /* 또는 aside[data-test="layout"] */
     margin:0px;
     margin-top: 10vh; /* 원하는 만큼 위쪽 여백 추가 */
     padding:0px;
-
 }
-

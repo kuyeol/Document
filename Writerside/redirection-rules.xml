@@ -18,4 +18,8 @@
         <description>Created after removal of "Empty MD Topic" from Documentation_By_Ung</description>
         <accepts>Empty-MD-Topica.html</accepts>
     </rule>
+    <rule id="2d4e93a0">
+        <description>Created after removal of "아키텍쳐" from Documentation_By_Ung</description>
+        <accepts>아키텍쳐.html</accepts>
+    </rule>
 </rules>

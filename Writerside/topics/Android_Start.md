@@ -1,4 +1,99 @@
-# 안드로이드 개발 기본 구조
+# 안드로이드 노트
+
+<procedure title="구성 요소">
+
+<procedure title="Model">
+<tabs>
+<tab title="Model">
+<code-block lang="kotlin">
+data class AnyModel( val para : Type
+                      ...            )
+</code-block>
+</tab>
+<tab title="Repository">
+<h6>인터페이스 정의</h6>
+<code-block lang="kotlin">
+interface AnyRepository {
+    fun getData( id : String )
+    //.....
+}
+</code-block>
+
+<h6>DAO 생성</h6>
+<code-block lang="kotlin">
+@Dao
+abstract class AnyDao : BaseDao&lt;AnyModel&gt;{
+   
+    @Query(
+        """
+        SELECT * FROM 테이블네임 WHERE 컬럼네임 = :파라미터명
+        """
+    //단일 테이블 쿼리
+     abstract fun getAnyModel(id: String): Flow&lt;Episode&gt;)
+    
+    @Transation
+        @Query(
+        """
+        SELECT 테이블A.* FROM 테이블A
+        INNER JOIN 테이블B ON 테이블A.테이블B_ID = 테이블B.ID
+        WHERE 테이블.A = : 테이블AID
+        """
+    ) //테이블 조인
+      abstract fun anyAndOther(anyId : String): Flow<AnyToOther>
+}
+</code-block>
+
+<h6> 인터페이스 구현</h6>
+<code-block lang="kotlin">
+class DefaultAnyRepository @Inject constructor ( 
+    private val anyDao : AnyDao, ) : AnyRepository {
+
+        override fun getData( id : String ): AnyModel 
+            = anyDao.getAnyModel(id)
+                    .map{ get -> get.map{
+                                    it.데이터모델()
+                                  }
+                    
+                    }
+}
+
+</code-block>
+</tab>
+<tab title="BaseDao">
+<code-block lang="kotlin">
+interface BaseDao&lt;T&gt; {
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insert(entity: T): Long
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAll(vararg entity: T)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertAll(entities: Collection&lt;T&gt;)
+
+    @Update(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun update(entity: T)
+
+    @Delete
+    suspend fun delete(entity: T): Int
+}
+</code-block>
+</tab>
+</tabs>
+</procedure>
+
+
+
+<procedure title="ViewModel">
+
+</procedure>
+
+<procedure title="View">
+
+</procedure>
+
+</procedure>
+
 //todo: 정리 필요
 ```
 //todo: 정리 필요
@@ -14,7 +109,6 @@ values : 이 폴더는 우리가 color, string, style, theme 파일을 두는 �
 xml : 이 폴더에는 XML 파일을 저장합니다.
 ```
 # Hilt 가이드
-<img src="$PROJECT_DIR$/asset/hilt-annotations.png" alt="Alt text" />
 <img src="../asset/hilt-annotations.png" alt="Alt text" />
 
 

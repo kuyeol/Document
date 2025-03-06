@@ -14,4 +14,8 @@
         <description>Created after removal of "API reference_1" from Documentation_By_Ung</description>
         <accepts>API-reference.html</accepts>
     </rule>
+    <rule id="5425e9d5">
+        <description>Created after removal of "Empty MD Topic" from Documentation_By_Ung</description>
+        <accepts>Empty-MD-Topica.html</accepts>
+    </rule>
 </rules>

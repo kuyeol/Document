@@ -33,12 +33,93 @@
         </toc-element>
     </toc-element>
     <toc-element toc-title="Kotlin">
-       <toc-element topic="kt_Keywords.md"/> 
+        <toc-element topic="kt_Keywords.md"/>
+        <toc-element toc-title="Basic">
+            <toc-element toc-title="01_introduction">
+                <toc-element topic="07_Inheritance.md"/>
+                <toc-element topic="06_Generics.md"/>
+                <toc-element topic="05_Classes.md"/>
+                <toc-element topic="04_Null Safety.md"/>
+                <toc-element topic="03_Variables.md"/>
+                <toc-element topic="02_Functions.md"/>
+                <toc-element topic="01_Hello world.md"/>
+                <toc-element topic="00_description.md"/>
+            </toc-element>
+            <toc-element toc-title="02_control_flow">
+                <toc-element topic="05_Conditional expression.md"/>
+                <toc-element topic="04_Equality Checks.md"/>
+                <toc-element topic="03_Ranges.md"/>
+                <toc-element topic="02_Loops.md"/>
+                <toc-element topic="01_When.md"/>
+                <toc-element topic="02_control_flow_00_description.md"/>
+            </toc-element>
+            <toc-element toc-title="03_special_classes">
+                <toc-element topic="04_Object.md"/>
+                <toc-element topic="03_Sealed Classes.md"/>
+                <toc-element topic="02_Enum.md"/>
+                <toc-element topic="01_Data classes.md"/>
+                <toc-element topic="03_special_classes_00_description.md"/>
+            </toc-element>
+            <toc-element toc-title="04_functional">
+                <toc-element topic="03_extensionFunctions.md"/>
+                <toc-element topic="02_Lambdas.md"/>
+                <toc-element topic="01_Higher-Order Functions.md"/>
+                <toc-element topic="04_functional_00_description.md"/>
+            </toc-element>
+            <toc-element toc-title="05_Collections">
+                <toc-element topic="17_getOrElse.md"/>
+                <toc-element topic="16_zip.md"/>
+                <toc-element topic="15_Map_getValue.md"/>
+                <toc-element topic="14_sorted.md"/>
+                <toc-element topic="13_max.md"/>
+                <toc-element topic="12_flatMap.md"/>
+                <toc-element topic="11_partition.md"/>
+                <toc-element topic="10_associateBy.md"/>
+                <toc-element topic="08_count.md"/>
+                <toc-element topic="07_firstlast.md"/>
+                <toc-element topic="06_find.md"/>
+                <toc-element topic="05_existential.md"/>
+                <toc-element topic="04_map.md"/>
+                <toc-element topic="04_filter.md"/>
+                <toc-element topic="03_Map.md"/>
+                <toc-element topic="02_Set.md"/>
+                <toc-element topic="01_List.md"/>
+                <toc-element topic="05_Collections_00_description.md"/>
+            </toc-element>
+            <toc-element toc-title="06_scope_functions">
+                <toc-element topic="05_also.md"/>
+                <toc-element topic="04_apply.md"/>
+                <toc-element topic="03_with.md"/>
+                <toc-element topic="02_run.md"/>
+                <toc-element topic="01_let.md"/>
+                <toc-element topic="06_scope_functions_00_description.md"/>
+            </toc-element>
+            <toc-element toc-title="07_Delegation">
+                <toc-element topic="02_DelegatedProperties.md"/>
+                <toc-element topic="01_delegationPattern.md"/>
+                <toc-element topic="07_Delegation_00_description.md"/>
+            </toc-element>
+            <toc-element toc-title="08_productivity_boosters">
+                <toc-element topic="04_Smart Casts.md"/>
+                <toc-element topic="03_Destructuring Declarations.md"/>
+                <toc-element topic="02_String Templates.md"/>
+                <toc-element topic="01_namedArguments.md"/>
+                <toc-element topic="08_productivity_boosters_00_description.md"/>
+            </toc-element>
+            <toc-element toc-title="09_Kotlin_JS">
+                <toc-element topic="06_HtmlBuilder.md"/>
+                <toc-element topic="05_Canvas.md"/>
+                <toc-element topic="03_external.md"/>
+                <toc-element topic="02_js_function.md"/>
+                <toc-element topic="01_dynamic.md"/>
+                <toc-element topic="09_Kotlin_JS_00_description.md"/>
+            </toc-element>
+        </toc-element>
         <toc-element toc-title="android">
             <toc-element topic="Android_Start.md"/>
         </toc-element>
     </toc-element>
-<toc-element toc-title="Artificial Intelligence">
+    <toc-element toc-title="Artificial Intelligence">
         <toc-element topic="ai-overview.md"/>
     </toc-element>
     <toc-element toc-title="Development Log">

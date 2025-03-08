@@ -21,10 +21,12 @@
     </variables>
 
     <footer>
+        <link href="https://github.com/kuyeol/Document">GitHub</link>
         <link href="https://github.com/kuyeol/Document/issues">Issue tracker</link>
         <link href="mailto:zimop12@gmail.com">Contact us</link>
         <social type="email" href="zimop12@gmail.com">Send us an email</social>
         <copyright>Ung_Yeol</copyright>
+      
     </footer>
 
 

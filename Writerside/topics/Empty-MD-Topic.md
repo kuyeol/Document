@@ -1,9 +1,9 @@
 # DesignPattern
 
-<procedure>
- 패턴 분류
-<procedure>
-생성 패턴
+<procedure title=" 패턴 분류">
+
+<procedure title="생성 패턴">
+
 
 <note>인스턴스화 과정</note>
 <tabs>
@@ -51,8 +51,8 @@ class Any{
 </tabs>
 </procedure>
 
-<procedure>
-구조 패턴
+<procedure title="구조 패턴">
+
 <note>객체의 결합,의존</note>
 
 <tabs>
@@ -110,9 +110,9 @@ class Any{
 </tabs>
 </procedure>
 
-<procedure>
-행동 패턴
-<note>다른 객체와 "데이터 공유" , "발행 -> 구독" </note>
+<procedure title="행동 패턴">
+
+<note>객체 의존 방법 "데이터 공유" , "발행 -> 구독" </note>
 <tabs>
 <tab  title="Command" >
 <code-block lang="kotlin"> 
@@ -163,8 +163,8 @@ class Any{
 </procedure>
 
 
-<procedure>
-동시성 패턴
+<procedure title="동시성 패턴">
+
 <note>멀티스레드 환경에서 동시 작업 시 객체간 작업을 의도대로 동작 가능 하도록 제약 생성</note>
 <tabs>
 <tab  title="..." >

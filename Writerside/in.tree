@@ -17,6 +17,7 @@
         <toc-element toc-title="Algorithm">
             <toc-element topic="al_overview.md"/>
         </toc-element>
+        <toc-element topic="problemList.md"/>
     </toc-element>
 
     <toc-element toc-title="Java">

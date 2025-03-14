@@ -1,5 +1,50 @@
 # 안드로이드 노트
 
+<procedure title="Context 전달">
+
+<procedure title="SQLite 클라이언트 호출">
+
+### 헬퍼 구현
+<code-block lang="kotlin">
+class DbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
+    override fun onCreate(db: SQLiteDatabase) {
+        db.execSQL(SQL_CREATE_ENTRIES)
+    }
+    override fun onUpgrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
+        // This database is only a cache for online data, so its upgrade policy is
+        // to simply to discard the data and start over
+        db.execSQL(SQL_DELETE_ENTRIES)
+        onCreate(db)
+    }
+    override fun onDowngrade(db: SQLiteDatabase, oldVersion: Int, newVersion: Int) {
+        onUpgrade(db, oldVersion, newVersion)
+    }
+    companion object {
+        // If you change the database schema, you must increment the database version.
+        const val DATABASE_VERSION = 1
+        const val DATABASE_NAME = "FeedReader.db"
+    }
+}
+</code-block>
+
+### 헬퍼 호출
+<code-block lang="kotlin">
+
+ val dbHelper = FeedReaderDbHelper(this)
+  
+</code-block>
+
+> [!note]
+> Context를 this로 전달 하여 인스턴스 호출
+>
+
+</procedure>
+
+
+</procedure>
+
+
+
 <procedure title="구성 요소">
 
 <procedure title="Model">

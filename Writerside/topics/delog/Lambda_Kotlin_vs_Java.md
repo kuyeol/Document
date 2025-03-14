@@ -1,0 +1,110 @@
+# 람다 표현식 코틀린 VS 자바
+
+### 자바 버전
+
+자바에서 람다식을 사용하는 예제입니다. 여기에서는 간단한 함수형 인터페이스를 정의하고, 람다식을 사용하여 구현합니다.
+
+```java
+// 함수형 인터페이스 정의
+@FunctionalInterface
+interface MathOperation {
+    int operation(int a, int b);
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // 람다식을 사용하여 함수형 인터페이스 구현
+        MathOperation addition = (int a, int b) -> a + b;
+        MathOperation subtraction = (a, b) -> a - b; // 타입 생략 가능
+
+        System.out.println("Addition: " + addition.operation(10, 5));
+        System.out.println("Subtraction: " + subtraction.operation(10, 5));
+    }
+}
+```
+
+### 코틀린 버전
+
+코틀린에서는 람다식을 사용하는 방법이 자바와 비슷하지만, 더 간결한 문법을 제공합니다. 아래 예제는 코틀린에서 람다식을 사용하는 방법을 보여줍니다.
+
+```kotlin
+// 함수형 인터페이스 정의
+fun interface MathOperation {
+    fun operation(a: Int, b: Int): Int
+}
+
+fun main() {
+    // 람다식을 사용하여 함수형 인터페이스 구현
+    val addition: MathOperation = { a, b -> a + b }
+    val subtraction: MathOperation = { a, b -> a - b }
+
+    println("Addition: ${addition.operation(10, 5)}")
+    println("Subtraction: ${subtraction.operation(10, 5)}")
+}
+```
+
+코틀린에서는 `fun interface` 키워드를 사용하여 함수형 인터페이스를 정의합니다. 람다식의 문법도 자바보다 더 간결합니다. 타입 추론이 가능하므로 람다식의 매개변수 타입을 생략할 수 있습니다.
+
+
+람다식 표현을 파라미터로 받을 수 있도록 자바와 코틀린으로 생성하는 방법을 살펴보겠습니다.
+
+**Java**
+
+자바에서는 함수형 인터페이스를 사용하여 람다식 표현을 파라미터로 받을 수 있습니다. 함수형 인터페이스는 추상 메소드가 하나만 있는 인터페이스를 말합니다.
+
+```java
+// 함수형 인터페이스 정의
+@FunctionalInterface
+interface LambdaExpression {
+    void execute();
+}
+
+// 람다식 표현을 파라미터로 받는 메소드
+public class LambdaParameter {
+    public void receiveLambda(LambdaExpression lambda) {
+        lambda.execute();
+    }
+}
+```
+
+위의 코드에서 `LambdaExpression` 인터페이스는 함수형 인터페이스로, 추상 메소드 `execute()` 하나만 가지고 있습니다. `LambdaParameter` 클래스의 `receiveLambda()` 메소드는 `LambdaExpression` 인터페이스를 파라미터로 받습니다.
+
+이제 람다식 표현을 사용하여 `receiveLambda()` 메소드를 호출할 수 있습니다.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        LambdaParameter lambdaParameter = new LambdaParameter();
+        lambdaParameter.receiveLambda(() -> System.out.println("Hello, Lambda!"));
+    }
+}
+```
+
+**Kotlin**
+
+코틀린에서는 함수 타입을 사용하여 람다식 표현을 파라미터로 받을 수 있습니다.
+
+```kotlin
+// 함수 타입 정의
+typealias LambdaExpression = () -> Unit
+
+// 람다식 표현을 파라미터로 받는 함수
+class LambdaParameter {
+    fun receiveLambda(lambda: LambdaExpression) {
+        lambda()
+    }
+}
+```
+
+위의 코드에서 `LambdaExpression` 타입은 함수 타입으로, 파라미터가 없고 반환 타입이 `Unit`인 함수를 나타냅니다. `LambdaParameter` 클래스의 `receiveLambda()` 함수는 `LambdaExpression` 타입을 파라미터로 받습니다.
+
+이제 람다식 표현을 사용하여 `receiveLambda()` 함수를 호출할 수 있습니다.
+
+```kotlin
+fun main() {
+    val lambdaParameter = LambdaParameter()
+    lambdaParameter.receiveLambda { println("Hello, Lambda!") }
+}
+```
+
+두 언어 모두 람다식 표현을 파라미터로 받을 수 있는 방법을 제공합니다. 자바에서는 함수형 인터페이스를 사용하고, 코틀린에서는 함수 타입을 사용합니다.

@@ -112,6 +112,8 @@ class Any{
 
 <procedure title="행동 패턴">
 
+## Behavioral patterns
+
 <note>객체 의존 방법 "데이터 공유" , "발행 -> 구독" </note>
 <tabs>
 <tab  title="Command" >
@@ -127,6 +129,7 @@ class Any{
 }
 
 </code-block>
+
 </tab>
 
 <tab  title="Chain of responsibility"  >

@@ -5,17 +5,14 @@
 <procedure title="SQLite 클라이언트 호출">
 
 <note>
-    
-> [!note]
-> 
-> 종속성 주입 할 필요없음(내장됨)
-</note>
 
-<note>
 
 > [!note]
 > 
->  `Context`를 `this`로 전달 하여 인스턴스 호출   
+> - 종속성 주입 할 필요없음(내장됨)
+> 
+> - `Context` 전달 시 -> `this`를 인수로 인스턴스 호출   
+
 </note>
 
 

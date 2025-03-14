@@ -12,9 +12,21 @@
 <procedure title="배열 (Array)">
 
 <procedure title="Two Sum (Easy)">
-  <note>
-    설명: 가장 기본적인 배열 문제 중 하나입니다. 해시 테이블을 활용하여 효율적으로 문제를 해결하는 방법을 연습할 수 있습니다.
-  </note>
+<note>
+
+> [!note]
+> 
+> 설명: 가장 기본적인 배열 문제 중 하나입니다. 해시 테이블을 활용하여 효율적으로 문제를 해결하는 방법을 연습할 수 있습니다.
+
+</note>
+
+```kotlin
+
+fun solutionCode() {
+//TODO:...
+}
+
+```
 
   [Link](https://leetcode.com/problems/two-sum/)
 </procedure>

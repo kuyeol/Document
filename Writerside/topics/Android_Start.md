@@ -4,8 +4,24 @@
 
 <procedure title="SQLite 클라이언트 호출">
 
+<note>
+    
+> [!note]
+> 
+> 종속성 주입 할 필요없음(내장됨)
+</note>
+
+<note>
+
+> [!note]
+> 
+>  `Context`를 `this`로 전달 하여 인스턴스 호출   
+</note>
+
+
+
 ### 헬퍼 구현
-<code-block lang="kotlin">
+```kotlin
 class DbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null, DATABASE_VERSION) {
     override fun onCreate(db: SQLiteDatabase) {
         db.execSQL(SQL_CREATE_ENTRIES)
@@ -25,22 +41,17 @@ class DbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
         const val DATABASE_NAME = "FeedReader.db"
     }
 }
-</code-block>
+```
 
 ### 헬퍼 호출
-<code-block lang="kotlin">
+
+```kotlin
 
  val dbHelper = FeedReaderDbHelper(this)
   
-</code-block>
-
-> [!note]
-> Context를 this로 전달 하여 인스턴스 호출
->
+```
 
 </procedure>
-
-
 </procedure>
 
 
@@ -50,31 +61,53 @@ class DbHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, null
 <procedure title="Model">
 <tabs>
 <tab title="Model">
-<code-block lang="kotlin">
-data class AnyModel( val para : Type
-                      ...            )
-</code-block>
+    <h6>엔터티 정의</h6>
+
+```kotlin
+@Entity(tableName = "테이블명")    
+data class AnyEntity(
+    @PrimaryKey val id : Type
+        val field1 : Type
+        val field2 : Type
+        //...
+)
+```
+
+<h6>엔터티 반환 객체(모델) </h6>
+
+```kotlin
+
+data class AnyModel(
+        val id : Type
+        val field1 : Type
+        val field2 : Type
+        //...
+)
+```
+
 </tab>
 <tab title="Repository">
 <h6>인터페이스 정의</h6>
-<code-block lang="kotlin">
+    
+```kotlin
 interface AnyRepository {
     fun getData( id : String )
     //.....
 }
-</code-block>
+```
 
 <h6>DAO 생성</h6>
-<code-block lang="kotlin">
+
+```kotlin
 @Dao
-abstract class AnyDao : BaseDao&lt;AnyModel&gt;{
+abstract class AnyDao : BaseDao<AnyModel>{
    
     @Query(
         """
         SELECT * FROM 테이블네임 WHERE 컬럼네임 = :파라미터명
         """
     //단일 테이블 쿼리
-     abstract fun getAnyModel(id: String): Flow&lt;Episode&gt;)
+     abstract fun getAnyModel(id: String): Flow<Episode>)
     
     @Transation
         @Query(
@@ -86,10 +119,11 @@ abstract class AnyDao : BaseDao&lt;AnyModel&gt;{
     ) //테이블 조인
       abstract fun anyAndOther(anyId : String): Flow<AnyToOther>
 }
-</code-block>
+```
 
 <h6> 인터페이스 구현</h6>
-<code-block lang="kotlin">
+
+```kotlin
 class DefaultAnyRepository @Inject constructor ( 
     private val anyDao : AnyDao, ) : AnyRepository {
 
@@ -101,12 +135,13 @@ class DefaultAnyRepository @Inject constructor (
                     
                     }
 }
+```
 
-</code-block>
 </tab>
 <tab title="BaseDao">
-<code-block lang="kotlin">
-interface BaseDao&lt;T&gt; {
+    
+```kotlin
+interface BaseDao<T> {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(entity: T): Long
 
@@ -114,7 +149,7 @@ interface BaseDao&lt;T&gt; {
     suspend fun insertAll(vararg entity: T)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(entities: Collection&lt;T&gt;)
+    suspend fun insertAll(entities: Collection<T>)
 
     @Update(onConflict = OnConflictStrategy.REPLACE)
     suspend fun update(entity: T)
@@ -122,7 +157,8 @@ interface BaseDao&lt;T&gt; {
     @Delete
     suspend fun delete(entity: T): Int
 }
-</code-block>
+```
+
 </tab>
 </tabs>
 </procedure>

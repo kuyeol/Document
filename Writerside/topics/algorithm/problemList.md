@@ -1,4 +1,4 @@
-# Algorithm Problem List
+# Algorithm List
 
 # 코딩 테스트 추천 문제 (LeetCode 기준)
 
@@ -17,20 +17,15 @@
 > [!note]
 > 
 > 설명: 가장 기본적인 배열 문제 중 하나입니다. 해시 테이블을 활용하여 효율적으로 문제를 해결하는 방법을 연습할 수 있습니다.
-
+> - [x] 해결 완료
+> 
+> [코드링크](https://leetcode.com/problems/two-sum/solutions/6537814/repost-twosum-by-kuyeol-10i2/)
+>
+> 릿코드 링크 
+> [Link](https://leetcode.com/problems/two-sum/)
 </note>
 
 
-
-```java title="Main.java"
-
-fun solutionCode() {
-//TODO:...
-}
-
-```
-
-  [Link](https://leetcode.com/problems/two-sum/)
 </procedure>
 
 <procedure title="Best Time to Buy and Sell Stock (Easy)">

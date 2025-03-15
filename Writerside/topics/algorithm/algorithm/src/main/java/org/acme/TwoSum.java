@@ -22,7 +22,6 @@ public class TwoSum {
 
     public static int[] twoSum(int[] arr, int target) {
 
-    }
         int i = 0;
         int j = 0;
         int find = 0;

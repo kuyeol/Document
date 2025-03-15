@@ -13,7 +13,6 @@ public class TwoSum {
 
         int[] out = twoSum(test, target);
 
-
         for (int a : out) {
             System.out.print(a + " ");
         }
@@ -22,14 +21,14 @@ public class TwoSum {
 
 
     public static int[] twoSum(int[] arr, int target) {
+
+    }
         int i = 0;
         int j = 0;
         int find = 0;
-
-     //  Map<Integer, Integer> map = new LinkedHashMap<Integer, Integer>();
-
         int size = arr.length;
-        int[][] newArray = new int[arr.length][arr.length];
+
+        int[][] newArray = new int[2][];
         int arri = 0;
 
         if (target != find) {
@@ -38,22 +37,9 @@ public class TwoSum {
                     find = arr[i] + arr[j];
                     if (find == target) {
                         System.out.println("i = " + i + ", j = " + j);
-
-
                         newArray[arri] = new int[]{i, j};
                         arri++;
-
-
-
-
-                        // Use Map Ver
-//                        map.put(i, j);
-//                       int[] mi = new int[]{ i, map.get(i) };
-//                        for (int a : mi) {
-//                            System.out.println(a);
-//                        }
-
-
+                       return newArray[0];
                     }
                 }
 

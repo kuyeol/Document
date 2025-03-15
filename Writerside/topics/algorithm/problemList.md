@@ -1,4 +1,4 @@
-# Algorithm List
+# Algorithm Problem List
 
 # 코딩 테스트 추천 문제 (LeetCode 기준)
 
@@ -20,7 +20,9 @@
 
 </note>
 
-```kotlin
+
+
+```java title="Main.java"
 
 fun solutionCode() {
 //TODO:...

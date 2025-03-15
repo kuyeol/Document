@@ -4,7 +4,7 @@ info:
   description: "spring API"
   version: "1.0.0"
 servers:
-  - url: "https://spring"
+  - url: "http://182.218.135.247:8081"
 paths:
   /{variable}:
     get:

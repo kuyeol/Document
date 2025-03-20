@@ -127,6 +127,9 @@
         </toc-element>
     </toc-element>
     <toc-element toc-title="Artificial Intelligence">
+        <toc-element toc-title="Ollama">
+            <toc-element topic="ollama_api.md"/>
+        </toc-element>
         <toc-element topic="통계분석테스트.md"/>
         <toc-element topic="ai-overview.md"/>
     </toc-element>

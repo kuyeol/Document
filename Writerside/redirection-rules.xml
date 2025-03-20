@@ -22,4 +22,8 @@
         <description>Created after removal of "아키텍쳐" from Documentation_By_Ung</description>
         <accepts>아키텍쳐.html</accepts>
     </rule>
+    <rule id="21536914">
+        <description>Created after removal of "Ollama API" from Documentation_By_Ung</description>
+        <accepts>ollama_api.html</accepts>
+    </rule>
 </rules>

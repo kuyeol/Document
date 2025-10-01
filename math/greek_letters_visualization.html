@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주요 그리스 문자 시각화</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #212529;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #ffffff;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #20c997; /* Teal theme for Greek Letters */
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        .viz-container {
+            border: 1px solid #e9ecef;
+            padding: 20px 12px; 
+            border-radius: 8px;
+            background-color: #fdfdfd;
+        }
+        .viz-box {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            width: 100%;
+        }
+        svg {
+            max-width: 700px; 
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 1em;
+        }
+        strong {
+            color: #d9534f;
+        }
+        .caption {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 10px;
+            text-align: center;
+        }
+        /* Table-specific styles */
+        .ref-table {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            overflow: hidden; /* For rounded corners */
+        }
+        .ref-table th, .ref-table td {
+            padding: 15px;
+            border: none;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .ref-table th {
+            background-color: #f8f9fa;
+        }
+        .ref-table tr:last-child td {
+            border-bottom: none;
+        }
+        .symbol {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>주요 그리스 문자 시각화</h1>
+        <p>수학과 과학의 여러 분야에서 변수, 상수, 연산 등을 나타내기 위해 사용되는 주요 그리스 문자를 시각 자료와 함께 정리했습니다.</p>
+
+        <!-- 1. 파이 (Pi) -->
+        <section id="visualization_pi">
+            <h2>1. 파이 (Π, π) - 원주율</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="-110 -110 220 220">
+                        <!-- Circle and Circumference -->
+                        <circle cx="0" cy="0" r="100" stroke="#20c997" stroke-width="2.5" fill="none" stroke-dasharray="10 5"/>
+                        <text x="-15" y="-80" font-size="14" fill="#20c997">Circumference (C)</text>
+                        <!-- Diameter -->
+                        <line x1="-100" y1="0" x2="100" y2="0" stroke="#d9534f" stroke-width="2"/>
+                        <text x="-40" y="20" font-size="14" fill="#d9534f">Diameter (d)</text>
+                        <!-- Formula -->
+                        <text x="-60" y="60" font-size="18" font-weight="bold">C / d = π ≈ 3.14159</text>
+                    </svg>
+                    <div class="caption">원은 크기에 상관없이 원주(둘레)를 지름으로 나눈 비율이 항상 일정합니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>파이(π)</b>는 원의 <strong>원주(둘레)와 지름 사이의 비율</strong>을 나타내는 수학 상수입니다. 이 값은 어떤 원에서든 약 3.14159로 항상 동일하며, 수학에서 가장 중요한 상수 중 하나입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 시그마 (Sigma) -->
+        <section id="visualization_sigma">
+            <h2>2. 시그마 (Σ, σ) - 합산</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="0 0 400 150">
+                        <!-- Summation Formula -->
+                        <text x="20" y="75" font-size="30" font-family="serif">Σ</text>
+                        <text x="50" y="80" font-size="24" font-family="serif">xᵢ</text>
+                        <text x="15" y="105" font-size="14">i=1</text>
+                        <text x="25" y="45" font-size="14">n</text>
+                        <text x="90" y="78" font-size="24">=</text>
+                        <!-- Expanded Sum -->
+                        <text x="120" y="78" font-size="18">x₁ + x₂ + x₃ + ... + xₙ</text>
+                    </svg>
+                    <div class="caption">대문자 시그마(Σ)는 주어진 범위 내의 모든 항을 더하라는 의미의 연산 기호입니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>대문자 시그마(Σ)</b>는 수학에서 <strong>합산(Summation)</strong>을 나타내는 기호입니다. 시그마 아래에 있는 시작 값(i=1)부터 위에 있는 끝 값(n)까지, 뒤따르는 항(xᵢ)의 값을 순서대로 모두 더하라는 의미입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 델타 (Delta) -->
+        <section id="visualization_delta">
+            <h2>3. 델타 (Δ, δ) - 변화량</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="0 0 300 200">
+                        <!-- Axes -->
+                        <line x1="10" y1="180" x2="290" y2="180" stroke="#333" stroke-width="1"/>
+                        <line x1="30" y1="20" x2="30" y2="190" stroke="#333" stroke-width="1"/>
+                        <!-- Line -->
+                        <line x1="50" y1="150" x2="250" y2="50" stroke="#007bff" stroke-width="2"/>
+                        <!-- Points -->
+                        <circle cx="80" cy="135" r="3" fill="#d9534f"/>
+                        <text x="50" y="140" font-size="12">(x₁, y₁)</text>
+                        <circle cx="220" cy="65" r="3" fill="#d9534f"/>
+                        <text x="225" y="65" font-size="12">(x₂, y₂)</text>
+                        <!-- Delta Lines -->
+                        <line x1="80" y1="135" x2="220" y2="135" stroke="#d9534f" stroke-dasharray="3"/>
+                        <line x1="220" y1="135" x2="220" y2="65" stroke="#d9534f" stroke-dasharray="3"/>
+                        <text x="140" y="150" font-size="14" fill="#d9534f">Δx = x₂ - x₁</text>
+                        <text x="230" y="105" font-size="14" fill="#d9534f">Δy = y₂ - y₁</text>
+                    </svg>
+                    <div class="caption">대문자 델타(Δ)는 두 지점 사이의 유한한 차이 또는 변화량을 의미합니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>대문자 델타(Δ)</b>는 변수의 <strong>변화량(Difference)</strong>을 나타냅니다. <code>Δx</code>는 x의 변화량, <code>Δy</code>는 y의 변화량을 의미하며, 주로 '나중 값 - 처음 값'으로 계산됩니다. 직선의 기울기는 <code>Δy / Δx</code>로 표현할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 4. 기타 주요 그리스 문자 -->
+        <section id="visualization_other_greek">
+            <h2>4. 기타 주요 그리스 문자 (참조표)</h2>
+            <div class="ref-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width:20%;">기호 (대/소)</th>
+                            <th style="width:20%;">이름</th>
+                            <th>주요 용도</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="symbol">Α / α</td>
+                            <td>알파</td>
+                            <td class="description">각도, 계수, 상수, 유의 수준(통계)</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol">Β / β</td>
+                            <td>베타</td>
+                            <td class="description">각도, 계수, 상수</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol">Ε / ε</td>
+                            <td>엡실론</td>
+                            <td class="description">극한에서 0에 가까운 아주 작은 양수, 오차</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol">Θ / θ</td>
+                            <td>세타</td>
+                            <td class="description">기하학에서의 각도</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol">Λ / λ</td>
+                            <td>람다</td>
+                            <td class="description">고유값(선형대수), 파장(물리)</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol">Μ / μ</td>
+                            <td>뮤</td>
+                            <td class="description">모평균(통계), 마이크로(단위 접두어)</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol">Σ / σ</td>
+                            <td>시그마</td>
+                            <td class="description"><b>Σ</b>: 합산 (Summation)<br><b>σ</b>: 모표준편차(통계)</td>
+                        </tr>
+                        <tr>
+                            <td class="symbol">Ω / ω</td>
+                            <td>오메가</td>
+                            <td class="description"><b>Ω</b>: 표본 공간(확률), 옴(전기 저항 단위)<br><b>ω</b>: 각속도(물리)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

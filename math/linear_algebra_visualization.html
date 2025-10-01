@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선형대수 핵심 개념 시각화</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #212529;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #ffffff;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #28a745; /* Green theme for linear algebra */
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        .viz-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            border: 1px solid #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fdfdfd;
+        }
+        .viz-box {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .explanation {
+            flex: 1.2;
+            min-width: 300px;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 1em;
+        }
+        strong {
+            color: #d9534f;
+        }
+        .caption {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>선형대수 핵심 개념 시각화</h1>
+        <p>선형대수의 주요 개념인 벡터, 행렬 변환, 행렬식, 고유벡터를 그림을 통해 직관적으로 이해할 수 있도록 돕는 자료입니다.</p>
+
+        <!-- 1. 벡터(Vector) 시각화 -->
+        <section id="visualization_vector">
+            <h2>1. 벡터 (Vector)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="-50 -50 200 200">
+                        <!-- Grid -->
+                        <path d="M -50 0 L 150 0 M 0 -50 L 0 150" stroke="#ddd" stroke-width="0.5"/>
+                        <!-- Vectors -->
+                        <path d="M 0 0 L 80 20" stroke="#007bff" stroke-width="2" marker-end="url(#arrow_blue)"/>
+                        <text x="85" y="20" fill="#007bff" font-size="10">v</text>
+                        <path d="M 0 0 L 30 70" stroke="#d9534f" stroke-width="2" marker-end="url(#arrow_red)"/>
+                        <text x="25" y="80" fill="#d9534f" font-size="10">w</text>
+                        <!-- Vector Addition -->
+                        <path d="M 0 0 L 110 90" stroke="#9d31ff" stroke-width="2.5" marker-end="url(#arrow_purple)"/>
+                        <text x="115" y="90" fill="#9d31ff" font-size="10">v+w</text>
+                        <!-- Parallelogram -->
+                        <path d="M 80 20 L 110 90 L 30 70" stroke="#aaa" stroke-dasharray="2" stroke-width="1" fill="none"/>
+                        <defs>
+                            <marker id="arrow_blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#007bff"/></marker>
+                            <marker id="arrow_red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d9534f"/></marker>
+                            <marker id="arrow_purple" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#9d31ff"/></marker>
+                        </defs>
+                    </svg>
+                    <div class="caption">벡터 v와 w의 덧셈은 평행사변형 법칙으로 시각화할 수 있습니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>벡터</b>는 <strong>크기와 방향</strong>을 함께 가지는 양입니다. 좌표평면에서는 원점에서 특정 점을 가리키는 화살표로 표현할 수 있습니다.
+                    </p>
+                    <p>
+                        벡터의 덧셈(<code>v + w</code>)은 각 벡터를 이어 붙이는 것과 같으며, 기하학적으로는 두 벡터를 이웃 변으로 하는 <strong>평행사변형의 대각선</strong>에 해당합니다. 스칼라 곱(<code>c·v</code>)은 벡터의 방향은 유지한 채 길이를 <code>c</code>배만큼 늘리거나 줄이는 연산입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 행렬 변환(Matrix Transformation) 시각화 -->
+        <section id="visualization_matrix_transform">
+            <h2>2. 행렬 변환 (Matrix Transformation)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="-50 -50 200 200">
+                        <path d="M -50 0 L 150 0 M 0 -50 L 0 150" stroke="#ddd" stroke-width="0.5"/>
+                        <!-- Original Unit Square -->
+                        <polygon points="0,0 50,0 50,50 0,50" fill="#007bff" opacity="0.3"/>
+                        <path d="M 0 0 L 50 0" stroke="#e83e8c" stroke-width="2.5" marker-end="url(#arrow_pink)"/>
+                        <text x="55" y="0" fill="#e83e8c" font-size="10">î</text>
+                        <path d="M 0 0 L 0 50" stroke="#17a2b8" stroke-width="2.5" marker-end="url(#arrow_cyan)"/>
+                        <text x="-10" y="55" fill="#17a2b8" font-size="10">ĵ</text>
+                        <!-- Transformed Square (Shear) -->
+                        <polygon points="0,0 50,0 75,50 25,50" fill="#28a745" opacity="0.5"/>
+                        <path d="M 0 0 L 50 0" stroke="#e83e8c" stroke-width="2.5" marker-end="url(#arrow_pink)"/>
+                        <path d="M 0 0 L 25 50" stroke="#17a2b8" stroke-width="2.5" marker-end="url(#arrow_cyan)"/>
+                         <defs>
+                            <marker id="arrow_pink" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#e83e8c"/></marker>
+                            <marker id="arrow_cyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#17a2b8"/></marker>
+                        </defs>
+                    </svg>
+                    <div class="caption">행렬 A = [[1, 0.5], [0, 1]]는 파란 사각형을 녹색 평행사변형으로 변환(전단 변환)시킵니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>행렬</b>은 단순히 숫자의 배열이 아니라, 벡터나 공간 전체를 변환시키는 <strong>함수 또는 연산</strong>으로 이해할 수 있습니다. 행렬을 벡터에 곱하면 그 벡터는 새로운 위치로 이동합니다.
+                    </p>
+                    <p>
+                        특히 행렬의 각 열은 기저벡터(<code>î</code>, <code>ĵ</code>)가 변환 후 어디로 가는지를 나타냅니다. 이 기저벡터의 움직임을 알면 공간 전체가 어떻게 변하는지 예측할 수 있습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 행렬식(Determinant) 시각화 -->
+        <section id="visualization_determinant">
+            <h2>3. 행렬식 (Determinant)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="-50 -50 200 200">
+                        <path d="M -50 0 L 150 0 M 0 -50 L 0 150" stroke="#ddd" stroke-width="0.5"/>
+                        <!-- Original Unit Square -->
+                        <polygon points="0,0 50,0 50,50 0,50" fill="#007bff" opacity="0.3"/>
+                        <text x="10" y="30" font-size="10">Area = 1</text>
+                        <!-- Transformed -->
+                        <polygon points="0,0 100,25 75,100  -25,75" fill="#28a745" opacity="0.5"/>
+                        <text x="30" y="60" fill="white" font-size="10">Area = |det(A)| = 3.5</text>
+                    </svg>
+                    <div class="caption">행렬 A = [[2, -0.5], [0.5, 1.5]] 변환 후, 넓이가 1이었던 사각형의 넓이는 det(A)의 절댓값인 3.5가 됩니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>행렬식</b>(<code>det(A)</code>)은 선형 변환이 <strong>넓이(2D)나 부피(3D)를 얼마나 변화시키는지</strong> 나타내는 스케일링 값입니다.
+                    </p>
+                    <ul>
+                        <li><code>|det(A)| > 1</code>: 넓이가 확장됩니다.</li>
+                        <li><code>|det(A)| < 1</code>: 넓이가 축소됩니다.</li>
+                        <li><code>det(A) = 0</code>: 넓이가 0이 됩니다. (차원이 축소되어 선이나 점으로 찌그러짐)</li>
+                        <li><code>det(A) < 0</code>: 공간의 방향이 뒤집힙니다. (거울에 비친 것처럼)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 4. 고유벡터(Eigenvector) 시각화 -->
+        <section id="visualization_eigenvector">
+            <h2>4. 고유벡터와 고유값 (Eigenvector & Eigenvalue)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="-50 -50 200 200">
+                        <path d="M -50 0 L 150 0 M 0 -50 L 0 150" stroke="#ddd" stroke-width="0.5"/>
+                        <!-- Eigenvector -->
+                        <path d="M -40 -40 L 40 40" stroke="#d9534f" stroke-dasharray="2" stroke-width="1"/>
+                        <path d="M 0 0 L 30 30" stroke="#d9534f" stroke-width="2" marker-end="url(#arrow_red)"/>
+                        <text x="35" y="30" fill="#d9534f" font-size="10">v</text>
+                        <path d="M 0 0 L 90 90" stroke="#d9534f" stroke-width="2.5" stroke-opacity="0.6" marker-end="url(#arrow_red_light)"/>
+                        <text x="95" y="90" fill="#d9534f" font-size="10">Av = 3v</text>
+                        <!-- Other vector -->
+                        <path d="M 0 0 L 0 50" stroke="#007bff" stroke-width="2" marker-end="url(#arrow_blue)"/>
+                        <text x="-15" y="50" fill="#007bff" font-size="10">w</text>
+                        <path d="M 0 0 L 50 50" stroke="#007bff" stroke-width="2.5" stroke-opacity="0.6" marker-end="url(#arrow_blue_light)"/>
+                        <text x="55" y="50" fill="#007bff" font-size="10">Aw</text>
+                        <defs>
+                             <marker id="arrow_red_light" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d9534f" opacity="0.6"/></marker>
+                             <marker id="arrow_blue_light" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#007bff" opacity="0.6"/></marker>
+                        </defs>
+                    </svg>
+                    <div class="caption">변환 후, 고유벡터 v는 방향이 불변하고 길이만 3배(고유값) 늘어났지만, 일반 벡터 w는 방향이 바뀌었습니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>고유벡터</b>는 그 행렬이 나타내는 선형 변환을 했을 때, 다른 벡터들처럼 방향이 바뀌지 않고 <strong>오직 크기만 변하는</strong> 특별한 벡터입니다. (<code>Av = λv</code>)
+                    </p>
+                    <p>
+                        <b>고유값</b>(<code>λ</code>)은 해당 고유벡터가 변환 중에 늘어나거나 줄어드는 <strong>스케일링 배수</strong>입니다. 고유벡터는 그 변환의 '축'과 같은 역할을 하며, 복잡한 변환을 더 쉽게 이해할 수 있도록 돕습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

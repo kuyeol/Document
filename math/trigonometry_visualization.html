@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼각함수 핵심 개념 시각화</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #212529;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #ffffff;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #fd7e14; /* Orange theme for Trigonometry */
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        .viz-container {
+            border: 1px solid #e9ecef;
+            /* 좌우 padding을 12px로 줄여 여백 최소화 */
+            padding: 20px 12px; 
+            border-radius: 8px;
+            background-color: #fdfdfd;
+        }
+        .viz-box {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            width: 100%;
+        }
+        svg {
+            /* 최대 너비를 늘려서 확보된 공간을 채우도록 함 */
+            max-width: 700px; 
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 1em;
+        }
+        strong {
+            color: #d9534f;
+        }
+        .caption {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>삼각함수 핵심 개념 시각화</h1>
+        <p>삼각함수의 기본 정의인 삼각비, 단위 원, 그리고 함수의 그래프를 그림을 통해 직관적으로 이해할 수 있도록 돕는 자료입니다.</p>
+
+        <!-- 1. 직각삼각형과 삼각비 (SOH-CAH-TOA) -->
+        <section id="visualization_sohcahtoa">
+            <h2>1. 직각삼각형과 삼각비 (SOH-CAH-TOA)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="0 0 600 200">
+                        <!-- Triangle -->
+                        <polygon points="50,170 250,170 250,50" fill="#fd7e14" opacity="0.2"/>
+                        <line x1="50" y1="170" x2="250" y2="170" stroke="#333" stroke-width="1.5"/>
+                        <line x1="250" y1="170" x2="250" y2="50" stroke="#333" stroke-width="1.5"/>
+                        <line x1="50" y1="170" x2="250" y2="50" stroke="#333" stroke-width="1.5"/>
+                        <!-- Right angle symbol -->
+                        <rect x="235" y="155" width="15" height="15" fill="none" stroke="#333" stroke-width="1"/>
+                        <!-- Angle theta -->
+                        <path d="M 80 170 A 30 30, 0, 0, 1, 72 145" stroke="#d9534f" stroke-width="1.5" fill="none"/>
+                        <text x="85" y="155" font-size="16" fill="#d9534f">θ</text>
+                        <!-- Labels -->
+                        <text x="130" y="185" font-size="14">Adjacent (밑변)</text>
+                        <text x="260" y="115" font-size="14">Opposite (높이)</text>
+                        <text x="120" y="95" font-size="14" transform="rotate(-30, 130, 100)">Hypotenuse (빗변)</text>
+                    </svg>
+                    <div class="caption">각 θ에 대한 삼각비는 세 변의 길이 비율로 정의됩니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>삼각함수</b>는 직각삼각형의 <strong>각도와 변의 길이 사이의 관계</strong>에서 시작됩니다. 기준 각 <code>θ</code>에 대해 각 변은 빗변, 높이, 밑변으로 불립니다.
+                    </p>
+                    <ul>
+                        <li><b>Sin(θ)</b> = <code>Opposite / Hypotenuse</code> (높이/빗변)</li>
+                        <li><b>Cos(θ)</b> = <code>Adjacent / Hypotenuse</code> (밑변/빗변)</li>
+                        <li><b>Tan(θ)</b> = <code>Opposite / Adjacent</code> (높이/밑변)</li>
+                    </ul>
+                    <p>이것을 쉽게 외우기 위해 <strong>SOH-CAH-TOA</strong>라는 약자를 사용합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 단위 원 (The Unit Circle) -->
+        <section id="visualization_unit_circle">
+            <h2>2. 단위 원 (The Unit Circle)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="-200 -120 400 240">
+                        <!-- Axes -->
+                        <line x1="-110" y1="0" x2="110" y2="0" stroke="#aaa" stroke-width="1"/>
+                        <line x1="0" y1="-110" x2="0" y2="110" stroke="#aaa" stroke-width="1"/>
+                        <!-- Unit Circle -->
+                        <circle cx="0" cy="0" r="100" stroke="#333" stroke-width="1.5" fill="none"/>
+                        <!-- Radius line -->
+                        <line x1="0" y1="0" x2="86.6" y2="-50" stroke="#d9534f" stroke-width="2"/>
+                        <!-- Triangle -->
+                        <line x1="86.6" y1="0" x2="86.6" y2="-50" stroke="#007bff" stroke-dasharray="2" stroke-width="1.5"/>
+                        <line x1="0" y1="-50" x2="86.6" y2="-50" stroke="#28a745" stroke-dasharray="2" stroke-width="1.5"/>
+                        <!-- Labels -->
+                        <text x="40" y="-5" font-size="14" fill="#d9534f">r=1</text>
+                        <path d="M 30 0 A 30 30 0 0 0 26 -15" fill="none" stroke="#333" stroke-width="1.5"/>
+                        <text x="35" y="-15" font-size="14">θ</text>
+                        <text x="40" y="15" fill="#28a745" font-size="14">x = cos(θ)</text>
+                        <text x="90" y="-25" fill="#007bff" font-size="14">y = sin(θ)</text>
+                        <text x="70" y="-60" font-size="14">P(cosθ, sinθ)</text>
+                        <circle cx="86.6" cy="-50" r="3" fill="#333"/>
+                    </svg>
+                    <div class="caption">단위 원 위의 점 P(x, y)의 좌표는 (cosθ, sinθ)와 같습니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        삼각함수를 모든 각도에 대해 정의하기 위해 <strong>반지름이 1인 원(단위 원)</strong>을 사용합니다. 원점과 원 위의 한 점 P를 잇는 선이 x축과 이루는 각을 <code>θ</code>라고 할 때, 점 P의 좌표 <code>(x, y)</code>는 다음과 같이 정의됩니다.
+                    </p>
+                    <p>
+                        <code>x = cos(θ)</code><br>
+                        <code>y = sin(θ)</code>
+                    </p>
+                    <p>
+                        이는 피타고라스 정리(x²+y²=1²)에 의해 가장 중요한 삼각함수 항등식인 <strong>sin²θ + cos²θ = 1</strong>이 항상 성립함을 보여줍니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 삼각함수 그래프 (Sine Wave) -->
+        <section id="visualization_sine_wave">
+            <h2>3. 삼각함수 그래프 (Sine Wave)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="0 0 400 200">
+                        <!-- Unit Circle Part -->
+                        <g transform="translate(50, 100)">
+                            <circle cx="0" cy="0" r="40" stroke="#aaa" fill="none" stroke-width="1"/>
+                            <line x1="-45" y1="0" x2="45" y2="0" stroke="#ddd" stroke-width="0.5"/>
+                            <line x1="0" y1="-45" x2="0" y2="45" stroke="#ddd" stroke-width="0.5"/>
+                            <line id="radius" x1="0" y1="0" x2="28.28" y2="-28.28" stroke="#d9534f"/>
+                            <circle id="dot" cx="28.28" cy="-28.28" r="2.5" fill="#d9534f"/>
+                        </g>
+                        <!-- Graph Part -->
+                        <g transform="translate(100, 100)">
+                            <line x1="0" y1="0" x2="280" y2="0" stroke="#333" stroke-width="1"/>
+                            <line x1="0" y1="-50" x2="0" y2="50" stroke="#333" stroke-width="1"/>
+                            <!-- Sine Wave -->
+                            <path d="M 0 0 C 40 -60, 100 -60, 140 0 S 240 60, 280 0" stroke="#007bff" stroke-width="2" fill="none"/>
+                            <!-- Ticks -->
+                            <text x="-10" y="-38" font-size="10">1</text>
+                            <text x="-15" y="45" font-size="10">-1</text>
+                            <text x="65" y="15" font-size="10">π/2</text>
+                            <text x="135" y="15" font-size="10">π</text>
+                            <text x="205" y="15" font-size="10">3π/2</text>
+                            <text x="275" y="15" font-size="10">2π</text>
+                            <!-- Connection Line -->
+                            <line x1="-21.72" y1="-28.28" x2="70" y2="-28.28" stroke="#d9534f" stroke-dasharray="2"/>
+                            <circle cx="70" cy="-40" r="2.5" fill="#007bff"/>
+                        </g>
+                    </svg>
+                    <div class="caption">단위 원의 y값(높이)을 각도에 따라 펼치면 사인 함수 그래프가 됩니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        삼각함수의 그래프는 단위 원의 움직임을 펼쳐놓은 것입니다. 예를 들어 <b>사인 함수(y = sinθ)</b>의 그래프는 각도 <code>θ</code>가 0에서 2π까지 변할 때, 단위 원 위의 점의 <strong>y좌표(높이)</strong>를 추적하여 그립니다.
+                    </p>
+                    <p>
+                        각도가 <code>π/2</code>일 때 높이가 최대(1)가 되고, <code>3π/2</code>일 때 최소(-1)가 됩니다. 이 과정이 2π마다 반복되므로 사인 함수는 <strong>주기 함수</strong>의 특징을 가집니다. 코사인 함수는 같은 방식으로 점의 <strong>x좌표</strong>를 추적하여 그립니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

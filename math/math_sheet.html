@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>수학 기호 종합 정리 (최종 완성본)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #343a40;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #dee2e6;
+            text-align: left;
+            vertical-align: middle;
+        }
+        th {
+            background-color: #e9ecef;
+            font-weight: 600;
+            text-align: center;
+        }
+        .symbol {
+            font-size: 1.3em;
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        .top-symbol { font-size: 1.5em; }
+        .sub-symbol { font-size: 1.2em; }
+        .concept-row td {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #495057;
+        }
+        .note {
+            background-color: #fff3cd;
+            border-left: 5px solid #ffeeba;
+            padding: 10px;
+            margin-top: 8px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        .item-viz-link {
+            font-size: 0.85em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #007bff;
+            background-color: #e7f1ff;
+            padding: 3px 8px;
+            border-radius: 10px;
+            margin-left: 8px;
+            transition: all 0.2s ease-in-out;
+            white-space: nowrap;
+        }
+        .item-viz-link:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>수학 주요 기호 종합 정리</h1>
+
+    <h2>📌 1. 기본 연산 및 대수 기호</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width:15%;">기호</th>
+            <th style="width:25%;">의미</th>
+            <th>영문명</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="symbol">+</td>
+            <td>덧셈</td>
+            <td>Plus</td>
+        </tr>
+        <tr>
+            <td class="symbol">−</td>
+            <td>뺄셈</td>
+            <td>Minus</td>
+        </tr>
+        <tr>
+            <td class="symbol">×, ⋅</td>
+            <td>곱셈</td>
+            <td>Multiplication</td>
+        </tr>
+        <tr>
+            <td class="symbol">/ 또는 ÷</td>
+            <td>나눗셈</td>
+            <td>Division</td>
+        </tr>
+        <tr>
+            <td class="symbol">=</td>
+            <td>같다</td>
+            <td>Equals</td>
+        </tr>
+        <tr>
+            <td class="symbol">≠</td>
+            <td>같지 않다</td>
+            <td>Not Equal to</td>
+        </tr>
+        <tr>
+            <td class="symbol">&gt;, &lt;, ≥, ≤</td>
+            <td>부등호</td>
+            <td>Inequality</td>
+        </tr>
+        <tr>
+            <td class="symbol">|a|</td>
+            <td>절댓값</td>
+            <td>Absolute Value</td>
+        </tr>
+        <tr>
+            <td class="symbol">≡</td>
+            <td>합동, 항등</td>
+            <td>Congruence, Equivalence</td>
+        </tr>
+        <tr>
+            <td class="symbol">∝</td>
+            <td>비례한다</td>
+            <td>Proportional to</td>
+        </tr>
+        <tr>
+            <td class="symbol">∞</td>
+            <td>무한</td>
+            <td>Infinity</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>📌 2. 집합 및 논리 기호</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width:15%;">기호</th>
+            <th style="width:25%;">의미</th>
+            <th>영문명</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="symbol">∈, ∉</td>
+            <td>원소이다 / 원소가 아니다</td>
+            <td>Element of / Not an element of</td>
+        </tr>
+        <tr>
+            <td class="symbol">⊂, ⊆</td>
+            <td>부분집합 / 부분집합 또는 같다</td>
+            <td>Subset / Subset or equal</td>
+        </tr>
+        <tr>
+            <td class="symbol">∪</td>
+            <td>합집합</td>
+            <td>Union</td>
+        </tr>
+        <tr>
+            <td class="symbol">∩</td>
+            <td>교집합</td>
+            <td>Intersection</td>
+        </tr>
+        <tr>
+            <td class="symbol">∅</td>
+            <td>공집합</td>
+            <td>Empty Set</td>
+        </tr>
+        <tr>
+            <td class="symbol">∀</td>
+            <td>모든 (For all)</td>
+            <td>Universal Quantifier</td>
+        </tr>
+        <tr>
+            <td class="symbol">∃</td>
+            <td>존재한다 (There exists)</td>
+            <td>Existential Quantifier</td>
+        </tr>
+        <tr>
+            <td class="symbol">⇒</td>
+            <td>함의 (p이면 q이다)</td>
+            <td>Implies</td>
+        </tr>
+        <tr>
+            <td class="symbol">⇔</td>
+            <td>동치 (p와 q는 필요충분)</td>
+            <td>If and Only If (iff)</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>📌 3. 미적분 기호 (상세)</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width:10%;">상위 기호</th>
+            <th style="width:15%;">기본 의미</th>
+            <th style="width:15%;">하위 기호</th>
+            <th style="width:25%;">세부 의미</th>
+            <th>설명</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="3" class="symbol top-symbol">d</td>
+            <td rowspan="3"> 미소량 (Differential) <p>개념:무한히 작은 변화량</p></td>
+            <td class="symbol sub-symbol">dx</td>
+            <td>독립변수 x의 극소 변화</td>
+            <td class="description">x축 방향으로의 무한히 작은 변화량을 의미합니다.</td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">dy</td>
+            <td>종속변수 y의 극소 변화</td>
+            <td class="description">x의 변화에 따른 y의 무한히 작은 변화량을 의미합니다.</td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">dy/dx</td>
+            <td>두 미소량의 비율 (도함수)</td>
+            <td class="description">함수의 한 점에서의 순간 변화율, 즉 도함수(미분계수)를 나타냅니다..<a
+                    href="math/calculus_visualization.html#visualization_derivative" class="item-viz-link">[시각화]</a>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="symbol top-symbol">lim</td>
+            <td rowspan="3">극한 (Limit) <p>기본 개념: 변수가 특정 값에 가까워질 때 함수가 수렴하는 값</p></td>
+            <td class="symbol sub-symbol">lim<sub>x→a</sub> f(x)</td>
+            <td>일반 극한</td>
+            <td colspan="3" class="concept-row">x가 a에 가까워질 때 f(x)가 수렴하는 값입니다.<a
+                    href="math/calculus_visualization.html#visualization_limit" class="item-viz-link">[시각화]</a></td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">lim<sub>x→a⁻</sub></td>
+            <td>좌극한</td>
+            <td class="description">x가 a보다 작은 쪽에서 a로 접근할 때의 극한값입니다..</td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">lim<sub>x→a⁺</sub></td>
+            <td>우극한</td>
+            <td class="description">x가 a보다 큰 쪽에서 a로 접근할 때의 극한값입니다</td>
+        </tr>
+        <tr>
+            <td rowspan="3" class="symbol top-symbol">′</td>
+            <td rowspan="3">도함수 (Derivative)</td>
+            <td colspan="3" class="concept-row">기본 개념: 함수의 한 점에서의 순간 변화율<a
+                    href="math/calculus_visualization.html#visualization_derivative" class="item-viz-link">[시각화]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">f′(x)</td>
+            <td>1계 도함수</td>
+            <td class="description"> 함수 f(x)의 순간 변화율을 나타냅니다. 함수를 한 번 미분한 결과입니다.</td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">f′′(x), f⁽ⁿ⁾(x)</td>
+            <td>고계 도함수</td>
+            <div class="note">⚠️ <b>주의:</b> f⁻¹(x)는 도함수가 아니라 <b>역함수(Inverse Function)</b>를 의미합니다.</div>
+            <td class="description">함수를 두 번 이상 미분한 결과 (2계, n계 도함수)를 의미합니다.</td>
+
+        </tr>
+
+        <tr>
+            <td rowspan="4" class="symbol top-symbol">∫</td>
+            <td rowspan="4">적분 (Integral)</td>
+            <td colspan="3" class="concept-row">기본 개념: 무한히 작은 조각들을 더하는 과정 (Summation)<a
+                    href="math/calculus_visualization.html#visualization_integral" class="item-viz-link">[시각화]</a></td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">∫f(x)dx</td>
+            <td>부정적분</td>
+            <td class="description">미분의 역연산으로, 원시함수를 찾는 과정입니다.</td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">∫<sub>a</sub><sup>b</sup> f(x)dx</td>
+            <td>정적분</td>
+            <td class="description">구간 [a, b]에서 곡선 아래의 면적 또는 누적합을 의미합니다.</td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">∬, ∭</td>
+            <td>다중적분</td>
+            <td class="description">2차원(면적), 3차원(부피) 영역으로 확장된 적분입니다.</td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="symbol top-symbol">∇</td>
+            <td rowspan="4">델 (Del/Nabla)</td>
+            <td colspan="3" class="concept-row">기본 개념: 다변수 벡터 미분 연산자</td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">∇f</td>
+            <td>그라디언트 (Gradient)</td>
+            <td class="description">스칼라 함수의 각 지점에서 가장 가파른 증가 방향과 그 크기를 나타내는 벡터입니다.</td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">∇·F</td>
+            <td>발산 (Divergence)</td>
+            <td class="description">벡터장이 한 점에서 퍼져나가는(source)지 모여드는(sink)지를 나타내는 스칼라 값입니다.</td>
+        </tr>
+        <tr>
+            <td class="symbol sub-symbol">∇×F</td>
+            <td>회전 (Curl)</td>
+            <td class="description">벡터장의 한 점 주위에서 얼마나 회전하는지를 나타내는 벡터입니다.</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>📌 4. 선형대수 기호</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width:15%;">분류</th>
+            <th style="width:10%;">기호</th>
+            <th style="width:20%;">의미</th>
+            <th>설명</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="2">벡터 (Vector)</td>
+            <td class="symbol">v⃗</td>
+            <td>벡터</td>
+            <td class="description">크기와 방향을 가진 물리량 또는 n차원 공간의 점.<a
+                    href="math/linear_algebra_visualization.html#visualization_vector" class="item-viz-link">[시각화]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="symbol">||v⃗||</td>
+            <td>벡터 크기 (Norm)</td>
+            <td class="description">벡터의 길이(크기). 유클리드 공간에서는 각 성분의 제곱 합의 제곱근입니다.</td>
+        </tr>
+        <tr>
+            <td rowspan="5">행렬 (Matrix)</td>
+            <td class="symbol">A</td>
+            <td>행렬</td>
+            <td class="description">숫자나 변수를 직사각형 배열로 나열한 것. 선형 변환을 표현합니다.<a
+                    href="math/linear_algebra_visualization.html#visualization_matrix_transform" class="item-viz-link">[시각화]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="symbol">Aᵀ</td>
+            <td>전치행렬 (Transpose)</td>
+            <td class="description">행렬의 행과 열을 서로 맞바꾼 행렬입니다. (m x n → n x m)</td>
+        </tr>
+        <tr>
+            <td class="symbol">A⁻¹</td>
+            <td>역행렬 (Inverse)</td>
+            <td class="description">원래 행렬과 곱했을 때 항등행렬(I)이 되는 행렬. 정사각 행렬에만 존재할 수 있습니다.</td>
+        </tr>
+        <tr>
+            <td class="symbol">det(A)</td>
+            <td>행렬식 (Determinant)</td>
+            <td class="description">행렬이 나타내는 선형 변환의 부피/넓이 스케일링 비율. 0이면 역행렬이 존재하지 않습니다.<a
+                    href="math/linear_algebra_visualization.html#visualization_determinant"
+                    class="item-viz-link">[시각화]</a></td>
+        </tr>
+        <tr>
+            <td class="symbol">rank(A)</td>
+            <td>랭크 (Rank)</td>
+            <td class="description">행렬의 열(또는 행)들이 생성하는 벡터 공간의 차원. 선형 독립인 열/행의 최대 개수입니다.</td>
+        </tr>
+        <tr>
+            <td rowspan="2">고유값 문제</td>
+            <td class="symbol">λ</td>
+            <td>고유값 (Eigenvalue)</td>
+            <td class="description">선형 변환 후에도 방향이 변하지 않는 고유벡터에 대한 스케일링 값입니다. (Av = λv)<a
+                    href="math/linear_algebra_visualization.html#visualization_eigenvector"
+                    class="item-viz-link">[시각화]</a></td>
+        </tr>
+        <tr>
+            <td class="symbol">v⃗</td>
+            <td>고유벡터 (Eigenvector)</td>
+            <td class="description">선형 변환 후에도 방향이 변하지 않고 크기만 변하는 0이 아닌 벡터입니다.</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>📌 5. 삼각함수 </h2>
+    <div class="container">
+
+        <h1>Opposite, Adjacent, Hypotenuse </h1>
+        <h2> 분류 </h2>
+        <p>
+            삼각함수에서 사용되는 세 변의 명칭, <b>Opposite (대변)</b>, <b>Adjacent (인접변)</b>, <b>Hypotenuse (빗변)</b>는 고정된 이름이 아닙니다. 이
+            명칭들은 <span class="highlight">어떤 각을 기준으로 삼느냐</span>에 따라 결정되는 상대적인 이름입니다.
+        </p>
+        <p>분류는 다음의 간단한 3단계로 이루어집니다.</p>
+
+        <h2>분류 기준 3단계</h2>
+        <ol>
+            <li><strong>1단계: Hypotenuse (빗변) 찾기</strong>
+                <ul>
+                    <li>가장 먼저, <span class="highlight">직각(90°)의 맞은편</span>에 있는 변을 찾습니다. 이 변이 바로 <b>Hypotenuse (빗변)</b>입니다.
+                    </li>
+                    <li>빗변은 항상 직각삼각형에서 가장 긴 변이며, 기준각(θ)이 바뀌어도 절대 변하지 않는 유일한 이름입니다.</li>
+                </ul>
+            </li>
+            <li><strong>2단계: Opposite (대변) 찾기</strong>
+                <ul>
+                    <li>우리가 기준으로 삼은 <span class="highlight">각(θ)의 바로 맞은편</span>에 있는 변을 찾습니다. 이 변이 <b>Opposite (대변)</b>입니다.
+                    </li>
+                    <li>'대(對)'는 '마주 본다'는 뜻입니다. 즉, 기준각과 마주 보는 변입니다.</li>
+                </ul>
+            </li>
+            <li><strong>3단계: Adjacent (인접변) 찾기</strong>
+                <ul>
+                    <li>마지막으로 남은 한 변이 <b>Adjacent (인접변)</b>입니다.</li>
+                    <li>'인접(隣接)'은 '이웃한다'는 뜻으로, 이 변은 <span class="highlight">기준각(θ)의 옆에 붙어 있는</span> 두 변 중 빗변이 아닌 변을
+                        말합니다.
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <h1> 예: 기준각에 따른 명칭 변화</h1>
+        <p>아래 두 그림은 똑같은 삼각형이지만, 어떤 각을 기준으로 삼느냐에 따라 'Opposite'과 'Adjacent'의 명칭이 어떻게 바뀌는지 보여줍니다.</p>
+        <div class="viz-container">
+            <div class="viz-box">
+                <div class="caption"><h3 align="center">
+                    기준각이 'A'일 경우
+                </h3>
+                </div>
+                <svg viewBox="0 0 300 250">
+                    <polygon points="10,140 190,140 190,10" fill="#fd7e14" opacity="0.1"/>
+                    <line x1="10" y1="140" x2="190" y2="140" stroke="#333" stroke-width="1"/>
+                    <line x1="190" y1="140" x2="190" y2="10" stroke="#333" stroke-width="1"/>
+                    <line x1="10" y1="140" x2="190" y2="10" stroke="#333" stroke-width="1"/>
+                    <rect x="178" y="128" width="12" height="12" fill="none" stroke="#333" stroke-width="0.5"/>
+                    <text x="15" y="130" font-size="12" font-weight="bold">A</text>
+                    <text x="175" y="150" font-size="12" font-weight="bold">C</text>
+                    <text x="195" y="15" font-size="12" font-weight="bold">B</text>
+                    <path d="M 35 140 A 25 25 0 0 1 29 118" fill="none" stroke="blue" stroke-width="1.5"/>
+                    <text x="40" y="125" font-size="12" fill="blue">θ</text>
+                    <text x="80" y="150" font-size="12" fill="#28a745">Adjacent (to A)</text>
+                    <text x="195" y="80" font-size="12" fill="#d9534f">Opposite (to A)</text>
+                    <text x="70" y="60" font-size="12" fill="#007bff" transform="rotate(-35, 70, 60)">Hypotenuse</text>
+                </svg>
+            </div>
+            <div class="viz-box">
+                <div class="caption">    <h3 align="center">
+                    기준각이 'B'일 경우
+                </h3>
+            </div>
+                <svg viewBox="0 0 300 250">
+                    <polygon points="10,140 190,140 190,10" fill="#fd7e14" opacity="0.1"/>
+                    <line x1="10" y1="140" x2="190" y2="140" stroke="#333" stroke-width="1"/>
+                    <line x1="190" y1="140" x2="190" y2="10" stroke="#333" stroke-width="1"/>
+                    <line x1="10" y1="140" x2="190" y2="10" stroke="#333" stroke-width="1"/>
+                    <rect x="178" y="128" width="12" height="12" fill="none" stroke="#333" stroke-width="0.5"/>
+                    <text x="15" y="130" font-size="12" font-weight="bold">A</text>
+                    <text x="175" y="150" font-size="12" font-weight="bold">C</text>
+                    <text x="195" y="15" font-size="12" font-weight="bold">B</text>
+                    <path d="M 190 35 A 25 25 0 0 1 168 41" fill="none" stroke="blue" stroke-width="1.5"/>
+                    <text x="170" y="35" font-size="12" fill="blue">θ</text>
+                    <text x="80" y="150" font-size="12" fill="#d9534f">Opposite (to B)</text>
+                    <text x="195" y="80" font-size="12" fill="#28a745">Adjacent (to B)</text>
+                    <text x="70" y="60" font-size="12" fill="#007bff" transform="rotate(-35, 70, 60)">Hypotenuse</text>
+                </svg>
+            </div>
+        </div>
+
+        <h2>핵심 요약</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>용 어</th>
+                <th>성 질</th>
+                <th>기 준</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="term">Hypotenuse<br>(빗변)</td>
+                <td>항상 고정, 가장 긴 변</td>
+                <td><b>직각(90°)</b>과 마주 보는 변</td>
+            </tr>
+            <tr>
+                <td class="term">Opposite<br>(대변)</td>
+                <td>기준각이 바뀌면 대상도 바뀜</td>
+                <td><b>기준각(θ)</b>과 마주 보는 변</td>
+            </tr>
+            <tr>
+                <td class="term">Adjacent<br>(인접변)</td>
+                <td>기준각이 바뀌면 대상도 바뀜</td>
+                <td><b>기준각(θ)</b> 옆에 붙어 있는 변 (빗변 제외)</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <table>
+        <thead>
+        <tr>
+            <th style="width:25%;">분류</th>
+            <th style="width:10%;">기호</th>
+            <th style="width:15%;">이름</th>
+            <th>정의 (직각삼각형 기준)</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>직각삼각형 정의</td>
+            <td class="symbol">sin, cos, tan</td>
+            <td>SOH-CAH-TOA</td>
+            <td class="description">각 변의 길이 비율로 정의됩니다.<a
+                    href="math/trigonometry_visualization.html#visualization_sohcahtoa" class="item-viz-link">[시각화]</a>
+            </td>
+        </tr>
+        <tr>
+            <td>단위 원 정의</td>
+            <td class="symbol">(cosθ, sinθ)</td>
+            <td>Unit Circle</td>
+            <td class="description">반지름 1인 원 위의 점(x, y) 좌표로 정의를 확장합니다.<a
+                    href="math/trigonometry_visualization.html#visualization_unit_circle"
+                    class="item-viz-link">[시각화]</a></td>
+        </tr>
+        <tr>
+            <td>함수 그래프</td>
+            <td class="symbol">y=sin(x)</td>
+            <td>Sine Wave</td>
+            <td class="description">단위 원의 높이를 각도에 따라 펼쳐 그린 주기 함수 그래프입니다.<a
+                    href="math/trigonometry_visualization.html#visualization_sine_wave" class="item-viz-link">[시각화]</a>
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="3">기본 함수 (SOH-CAH-TOA)</td>
+            <td class="symbol">sin(θ)</td>
+            <td>Sine</td>
+            <td class="description">opposite / hypotenuse (높이 / 빗변)</td>
+        </tr>
+        <tr>
+            <td class="symbol">cos(θ)</td>
+            <td>Cosine</td>
+            <td class="description">adjacent / hypotenuse (밑변 / 빗변)</td>
+        </tr>
+        <tr>
+            <td class="symbol">tan(θ)</td>
+            <td>Tangent</td>
+            <td class="description">opposite / adjacent (높이 / 밑변)</td>
+        </tr>
+        <tr>
+            <td rowspan="3">역수 함수</td>
+            <td class="symbol">csc(θ)</td>
+            <td>Cosecant</td>
+            <td class="description">1 / sin(θ) = hypotenuse / opposite</td>
+        </tr>
+        <tr>
+            <td class="symbol">sec(θ)</td>
+            <td>Secant</td>
+            <td class="description">1 / cos(θ) = hypotenuse / adjacent</td>
+        </tr>
+        <tr>
+            <td class="symbol">cot(θ)</td>
+            <td>Cotangent</td>
+            <td class="description">1 / tan(θ) = adjacent / opposite</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>📌 6. 확률 및 통계 기호</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width:15%;">기호</th>
+            <th style="width:25%;">의미</th>
+            <th>설명</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="symbol">P(A)</td>
+            <td>사건 A의 확률</td>
+            <td>Probability of Event A</td>
+        </tr>
+        <tr>
+            <td class="symbol">E[X]</td>
+            <td>기댓값</td>
+            <td>분포의 평균적인 값, 무게 중심으로 해석됩니다.<a href="math/probability_visualization.html#visualization_expected_value"
+                                             class="item-viz-link">[시각화]</a></td>
+        </tr>
+        <tr>
+            <td class="symbol">Var(X)</td>
+            <td>분산</td>
+            <td>데이터가 평균으로부터 얼마나 퍼져있는지를 나타내는 척도입니다.</td>
+        </tr>
+        <tr>
+            <td class="symbol">σ</td>
+            <td>표준편차</td>
+            <td>분산의 제곱근으로, 데이터의 퍼짐 정도를 원래 단위로 표현합니다.</td>
+        </tr>
+        <tr>
+            <td class="symbol">X ~ N(μ, σ²)</td>
+            <td>정규분포를 따른다</td>
+            <td>평균 μ, 표준편차 σ인 종 모양의 분포를 따릅니다.<a
+                    href="math/probability_visualization.html#visualization_normal_distribution" class="item-viz-link">[시각화]</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="symbol">(n k)</td>
+            <td>조합</td>
+            <td>n개에서 순서없이 k개를 뽑는 경우의 수입니다.<a href="math/probability_visualization.html#visualization_combination"
+                                             class="item-viz-link">[시각화]</a></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <h2>📌 7. 주요 그리스 문자</h2>
+    <table>
+        <thead>
+        <tr>
+            <th style="width:15%;">기호</th>
+            <th style="width:20%;">이름</th>
+            <th>주요 용도 및 설명</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="symbol">α, β, γ</td>
+            <td>알파, 베타, 감마</td>
+            <td>각도, 계수, 상수</td>
+        </tr>
+        <tr>
+            <td class="symbol">Δ</td>
+            <td>델타</td>
+            <td>두 지점 사이의 유한한 차이 또는 변화량을 의미합니다.<a href="math/greek_letters_visualization.html#visualization_delta"
+                                                 class="item-viz-link">[시각화]</a></td>
+        </tr>
+        <tr>
+            <td class="symbol">ε</td>
+            <td>엡실론</td>
+            <td>극한에서 0에 가까운 아주 작은 양수, 오차</td>
+        </tr>
+        <tr>
+            <td class="symbol">θ</td>
+            <td>세타</td>
+            <td>기하학에서의 각도</td>
+        </tr>
+        <tr>
+            <td class="symbol">λ</td>
+            <td>람다</td>
+            <td>고유값(선형대수), 파장(물리)</td>
+        </tr>
+        <tr>
+            <td class="symbol">μ</td>
+            <td>뮤</td>
+            <td>모평균(통계), 마이크로(단위 접두어)</td>
+        </tr>
+        <tr>
+            <td class="symbol">π</td>
+            <td>파이</td>
+            <td>원의 둘레와 지름의 비율(원주율)을 나타내는 상수입니다.<a href="math/greek_letters_visualization.html#visualization_pi"
+                                                  class="item-viz-link">[시각화]</a></td>
+        </tr>
+        <tr>
+            <td class="symbol">Σ, σ</td>
+            <td>시그마</td>
+            <td><b>Σ</b>: 주어진 범위의 모든 항을 더하라는 합산 기호입니다.<a
+                    href="math/greek_letters_visualization.html#visualization_sigma" class="item-viz-link">[시각화]</a><br><b>σ</b>:
+                모표준편차(통계)
+            </td>
+        </tr>
+        <tr>
+            <td class="symbol">Ω, ω</td>
+            <td>오메가</td>
+            <td><b>Ω</b>: 표본 공간(확률), 옴(전기 저항 단위)<br><b>ω</b>: 각속도(물리)</td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>확률 및 통계 핵심 개념 시각화</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #212529;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #ffffff;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #6f42c1; /* Purple theme for Probability */
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        .viz-container {
+            border: 1px solid #e9ecef;
+            padding: 20px 12px; 
+            border-radius: 8px;
+            background-color: #fdfdfd;
+        }
+        .viz-box {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            width: 100%;
+        }
+        svg {
+            max-width: 700px; 
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 1em;
+        }
+        strong {
+            color: #d9534f;
+        }
+        .caption {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>확률 및 통계 핵심 개념 시각화</h1>
+        <p>확률 및 통계의 주요 개념인 정규분포, 기댓값, 조합을 그림을 통해 직관적으로 이해할 수 있도록 돕는 자료입니다.</p>
+
+        <!-- 1. 정규분포 (Normal Distribution) -->
+        <section id="visualization_normal_distribution">
+            <h2>1. 정규분포 (Normal Distribution)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="0 0 400 200">
+                        <!-- Axes -->
+                        <line x1="10" y1="180" x2="390" y2="180" stroke="#333" stroke-width="1"/>
+                        <!-- Bell Curve -->
+                        <path d="M 50 180 C 100 180, 120 40, 200 40 C 280 40, 300 180, 350 180" stroke="#6f42c1" stroke-width="2.5" fill="#6f42c1" fill-opacity="0.1"/>
+                        <!-- Mean line -->
+                        <line x1="200" y1="180" x2="200" y2="40" stroke="#d9534f" stroke-dasharray="3" stroke-width="1.5"/>
+                        <text x="195" y="195" font-size="12" fill="#d9534f">μ</text>
+                        <!-- Std Dev lines -->
+                        <line x1="260" y1="180" x2="260" y2="105" stroke="#aaa" stroke-dasharray="2"/>
+                        <line x1="140" y1="180" x2="140" y2="105" stroke="#aaa" stroke-dasharray="2"/>
+                        <text x="250" y="195" font-size="12">μ+σ</text>
+                        <text x="130" y="195" font-size="12">μ-σ</text>
+                        <!-- Area annotation -->
+                        <path d="M 140 140 L 260 140" stroke="#333" stroke-width="1" marker-start="url(#tick)" marker-end="url(#tick)"/>
+                        <text x="185" y="130" font-size="12" fill="#333">68%</text>
+                        <defs><marker id="tick" viewBox="0 0 2 10" refX="1" refY="5" markerWidth="2" markerHeight="10"><line x1="1" y1="0" x2="1" y2="10" stroke="#333" stroke-width="1"/></marker></defs>
+                    </svg>
+                    <div class="caption">평균(μ)을 중심으로 좌우대칭인 종 모양의 분포. 데이터의 약 68%는 ±1 표준편차(σ) 내에 존재합니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>정규분포</b>는 자연 현상과 사회 현상에서 가장 흔하게 나타나는 연속 확률 분포입니다. 키, 몸무게, 시험 성적 등 수많은 데이터가 정규분포를 따릅니다.
+                    </p>
+                    <ul>
+                        <li>분포의 중심은 <strong>평균(μ)</strong>에 의해 결정됩니다.</li>
+                        <li>분포의 퍼진 정도는 <strong>표준편차(σ)</strong>에 의해 결정됩니다. σ가 클수록 더 넓게 퍼진 모양이 됩니다.</li>
+                        <li>평균을 중심으로 완벽한 <strong>좌우대칭</strong> 형태를 가집니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 기댓값 (Expected Value) -->
+        <section id="visualization_expected_value">
+            <h2>2. 기댓값 (Expected Value)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="0 0 400 200">
+                        <!-- Number Line -->
+                        <line x1="10" y1="150" x2="390" y2="150" stroke="#333" stroke-width="1"/>
+                        <!-- Outcomes and Probabilities (Lollipop chart) -->
+                        <line x1="80" y1="150" x2="80" y2="50" stroke="#aaa"/>
+                        <circle cx="80" cy="50" r="10" fill="#007bff"/>
+                        <text x="70" y="165">값: 1</text>
+                        <text x="60" y="35">P=0.5</text>
+
+                        <line x1="200" y1="150" x2="200" y2="110" stroke="#aaa"/>
+                        <circle cx="200" cy="110" r="10" fill="#28a745"/>
+                        <text x="190" y="165">값: 4</text>
+                        <text x="180" y="95">P=0.2</text>
+                        
+                        <line x1="320" y1="150" x2="320" y2="90" stroke="#aaa"/>
+                        <circle cx="320" cy="90" r="10" fill="#fd7e14"/>
+                        <text x="310" y="165">값: 6</text>
+                        <text x="300" y="75">P=0.3</text>
+                        
+                        <!-- Fulcrum (Balancing point) -->
+                        <polygon points="150,150 190,150 170,180" fill="#d9534f"/>
+                        <text x="135" y="195" font-size="14" fill="#d9534f">E[X] = 3.1</text>
+                    </svg>
+                    <div class="caption">기댓값은 각 결과값에 확률을 가중치로 곱하여 더한 값으로, 분포의 무게중심과 같습니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>기댓값</b>(<code>E[X]</code>)은 어떤 확률 과정을 무한히 반복했을 때, 얻을 수 있는 결과의 <strong>평균적인 값</strong>을 의미합니다. 각 결과값에 그 결과가 나올 확률을 곱한 후 모두 더하여 계산합니다.
+                    </p>
+                    <p>
+                        <code>E[X] = (결과값₁) × (확률₁) + (결과값₂) × (확률₂) + ...</code>
+                    </p>
+                    <p>
+                        위 그림의 예시에서는 <code>E[X] = (1 × 0.5) + (4 × 0.2) + (6 × 0.3) = 0.5 + 0.8 + 1.8 = 3.1</code> 입니다. 이는 분포의 <strong>무게 중심(Center of Mass)</strong> 역할을 하며, 시소의 받침점처럼 분포 전체의 균형을 맞추는 지점입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 조합 (Combination) -->
+        <section id="visualization_combination">
+            <h2>3. 조합 (Combination)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="0 0 400 200">
+                        <text x="20" y="30" font-size="16">5개의 구슬 (n=5)</text>
+                        <!-- Main Set -->
+                        <circle cx="50" cy="60" r="15" fill="#007bff"/>
+                        <circle cx="90" cy="60" r="15" fill="#28a745"/>
+                        <circle cx="130" cy="60" r="15" fill="#d9534f"/>
+                        <circle cx="170" cy="60" r="15" fill="#fd7e14"/>
+                        <circle cx="210" cy="60" r="15" fill="#6f42c1"/>
+                        
+                        <text x="20" y="110" font-size="16">이 중에서 3개를 순서없이 뽑는 경우 (k=3)</text>
+                        <text x="20" y="130" font-size="16" font-weight="bold">조합 (Combination)의 수 = 10가지</text>
+                        
+                        <!-- Example Subsets -->
+                        <g transform="translate(30, 160)">
+                            <circle cx="0" cy="0" r="10" fill="#007bff"/>
+                            <circle cx="25" cy="0" r="10" fill="#28a745"/>
+                            <circle cx="50" cy="0" r="10" fill="#d9534f"/>
+                        </g>
+                        <g transform="translate(120, 160)">
+                            <circle cx="0" cy="0" r="10" fill="#007bff"/>
+                            <circle cx="25" cy="0" r="10" fill="#28a745"/>
+                            <circle cx="50" cy="0" r="10" fill="#fd7e14"/>
+                        </g>
+                        <g transform="translate(210, 160)">
+                            <circle cx="0" cy="0" r="10" fill="#28a745"/>
+                            <circle cx="25" cy="0" r="10" fill="#fd7e14"/>
+                            <circle cx="50" cy="0" r="10" fill="#6f42c1"/>
+                        </g>
+                        <text x="300" y="165" font-size="16">... 등등</text>
+                    </svg>
+                    <div class="caption">서로 다른 n개에서 순서를 고려하지 않고 k개를 선택하는 방법의 가짓수입니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>조합</b>(<code>(n k)</code> 또는 <code>nCk</code>)은 서로 다른 <code>n</code>개의 원소를 가진 집합에서 <strong>순서를 고려하지 않고</strong> <code>k</code>개의 원소를 선택하는 방법의 수를 의미합니다.
+                    </p>
+                    <p>
+                        예를 들어, 5명의 사람 중 3명의 대표를 뽑는 경우, (A, B, C)를 뽑는 것과 (C, B, A)를 뽑는 것은 같은 경우로 취급됩니다. 이것이 순서를 고려하는 <strong>순열(Permutation)</strong>과의 가장 큰 차이점입니다.
+                    </p>
+                    <p>로또 번호를 뽑거나 카드 게임에서 패를 받는 경우가 조합의 대표적인 예시입니다.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

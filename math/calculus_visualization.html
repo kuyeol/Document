@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미적분 핵심 개념 시각화</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #212529;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: #ffffff;
+            padding: 25px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 2em;
+            color: #007bff;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 10px;
+            margin-top: 50px;
+        }
+        section {
+            margin-bottom: 50px;
+        }
+        .viz-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            border: 1px solid #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fdfdfd;
+        }
+        .viz-box {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .explanation {
+            flex: 1.2;
+            min-width: 300px;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        p {
+            font-size: 1.1em;
+        }
+        code {
+            background-color: #e9ecef;
+            padding: 3px 7px;
+            border-radius: 4px;
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+            font-size: 1em;
+        }
+        strong {
+            color: #d9534f;
+        }
+        .caption {
+            font-size: 0.9em;
+            color: #6c757d;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>미적분 핵심 개념 시각화</h1>
+        <p>미적분의 주요 개념인 극한, 미분, 적분을 그림을 통해 직관적으로 이해할 수 있도록 돕는 자료입니다.</p>
+
+        <!-- 1. 극한(Limit) 시각화 -->
+        <section id="visualization_limit">
+            <h2>1. 극한 (Limit)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="0 0 300 200">
+                        <!-- Axes -->
+                        <line x1="10" y1="180" x2="290" y2="180" stroke="#333" stroke-width="1"/>
+                        <line x1="30" y1="20" x2="30" y2="190" stroke="#333" stroke-width="1"/>
+                        <text x="280" y="195">x</text>
+                        <text x="15" y="30">y</text>
+                        <!-- Curve -->
+                        <path d="M 50 150 C 100 50, 200 50, 250 150" stroke="#007bff" stroke-width="2" fill="none"/>
+                        <!-- Point a and L -->
+                        <line x1="150" y1="180" x2="150" y2="72" stroke-dasharray="2" stroke="#aaa"/>
+                        <line x1="30" y1="72" x2="150" y2="72" stroke-dasharray="2" stroke="#aaa"/>
+                        <text x="145" y="195" font-weight="bold">a</text>
+                        <text x="10" y="77" font-weight="bold">L</text>
+                        <!-- Hole in function -->
+                        <circle cx="150" cy="72" r="3" fill="white" stroke="#d9534f" stroke-width="1.5"/>
+                        <!-- Approaching arrows -->
+                        <path d="M 120 85 L 140 75" stroke="#d9534f" fill="none" stroke-width="1.5" marker-end="url(#arrow)"/>
+                        <path d="M 180 85 L 160 75" stroke="#d9534f" fill="none" stroke-width="1.5" marker-end="url(#arrow)"/>
+                        <defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#d9534f"/></marker></defs>
+                    </svg>
+                    <div class="caption">x가 a로 가까워질 때, f(x)는 L로 수렴합니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>극한</b>이란 변수 <code>x</code>가 특정 값 <code>a</code>에 <strong>'한없이 가까워질 때'</strong> 함수 <code>f(x)</code>가 어떤 값 <code>L</code>에 가까워지는지를 나타냅니다.
+                    </p>
+                    <p>
+                        중요한 점은 <code>x</code>가 정확히 <code>a</code>일 필요는 없다는 것입니다. 그림처럼 <code>f(a)</code> 지점이 비어있더라도, 왼쪽(좌극한)과 오른쪽(우극한)에서 접근하는 목표값이 <code>L</code>로 동일하다면 극한값은 <code>L</code>이 됩니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 미분(Derivative) 시각화 -->
+        <section id="visualization_derivative">
+            <h2>2. 미분 (Derivative)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="0 0 300 200">
+                        <!-- Axes -->
+                        <line x1="10" y1="180" x2="290" y2="180" stroke="#333" stroke-width="1"/>
+                        <line x1="30" y1="20" x2="30" y2="190" stroke="#333" stroke-width="1"/>
+                        <!-- Curve -->
+                        <path d="M 50 160 C 100 40, 200 120, 250 50" stroke="#007bff" stroke-width="2" fill="none"/>
+                        <!-- Tangent Line -->
+                        <line x1="50" y1="115" x2="200" y2="70" stroke="#28a745" stroke-width="1.5"/>
+                        <!-- Zoomed-in triangle -->
+                        <line x1="120" y1="89" x2="160" y2="89" stroke-dasharray="2" stroke="#d9534f"/>
+                        <line x1="160" y1="89" x2="160" y2="76" stroke-dasharray="2" stroke="#d9534f"/>
+                        <text x="135" y="102" fill="#d9534f" font-size="12">dx</text>
+                        <text x="165" y="85" fill="#d9534f" font-size="12">dy</text>
+                        <circle cx="125" cy="92.5" r="2.5" fill="#333"/>
+                    </svg>
+                    <div class="caption">곡선을 무한히 확대하면 직선처럼 보이며, 그 직선의 기울기가 바로 미분계수(dy/dx)입니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>미분</b>은 함수의 한 점에서의 <strong>'순간 변화율'</strong> 또는 <strong>'접선의 기울기'</strong>를 의미합니다.
+                    </p>
+                    <p>
+                        곡선을 현미경으로 확대하듯 아주 가까이서 보면 거의 직선처럼 보입니다. 이때 만들어지는 아주 작은 직각삼각형의 밑변을 <code>dx</code>(x의 미소 변화량), 높이를 <code>dy</code>(y의 미소 변화량)라고 할 때, 그 비율인 <code>dy/dx</code>가 바로 미분계수입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 적분(Integral) 시각화 -->
+        <section id="visualization_integral">
+            <h2>3. 적분 (Integral)</h2>
+            <div class="viz-container">
+                <div class="viz-box">
+                    <svg viewBox="0 0 300 200">
+                        <!-- Axes -->
+                        <line x1="10" y1="180" x2="290" y2="180" stroke="#333" stroke-width="1"/>
+                        <line x1="30" y1="20" x2="30" y2="190" stroke="#333" stroke-width="1"/>
+                        <!-- Curve -->
+                        <path id="curve-path" d="M 50 150 C 100 50, 200 50, 250 100" stroke="#007bff" stroke-width="2" fill="none"/>
+                        <!-- Rectangles for Riemann Sum -->
+                        <rect x="50" y="118" width="20" height="62" fill="#28a745" fill-opacity="0.5" stroke="#fff"/>
+                        <rect x="70" y="88" width="20" height="92" fill="#28a745" fill-opacity="0.5" stroke="#fff"/>
+                        <rect x="90" y="66" width="20" height="114" fill="#28a745" fill-opacity="0.5" stroke="#fff"/>
+                        <rect x="110" y="54" width="20" height="126" fill="#28a745" fill-opacity="0.5" stroke="#fff"/>
+                        <rect x="130" y="50" width="20" height="130" fill="#28a745" fill-opacity="0.5" stroke="#fff"/>
+                        <rect x="150" y="54" width="20" height="126" fill="#28a745" fill-opacity="0.5" stroke="#fff"/>
+                        <rect x="170" y="62" width="20" height="118" fill="#28a745" fill-opacity="0.5" stroke="#fff"/>
+                        <rect x="190" y="72" width="20" height="108" fill="#28a745" fill-opacity="0.5" stroke="#fff"/>
+                        <rect x="210" y="84" width="20" height="96" fill="#28a745" fill-opacity="0.5" stroke="#fff"/>
+                        <!-- Labels a and b -->
+                        <text x="48" y="195" font-weight="bold">a</text>
+                        <text x="228" y="195" font-weight="bold">b</text>
+                    </svg>
+                    <div class="caption">구간 [a, b]에서 곡선 아래의 넓이는 잘게 쪼갠 직사각형들의 넓이를 합하여 구합니다.</div>
+                </div>
+                <div class="explanation">
+                    <p>
+                        <b>정적분</b>(<code>∫ₐᵇ f(x)dx</code>)은 기본적으로 구간 <code>[a, b]</code>에서 함수 <code>f(x)</code>의 그래프와 x축 사이의 <strong>'넓이'</strong>를 구하는 과정입니다.
+                    </p>
+                    <p>
+                        이 넓이를 구하기 위해 그림처럼 구간을 수많은 얇은 직사각형으로 나눕니다. 각 직사각형의 넓이는 (높이 <code>f(x)</code>) × (밑변 <code>dx</code>) 입니다. 이 직사각형들의 넓이를 모두 더하는 것(Summation)이 바로 적분입니다. 직사각형의 폭 <code>dx</code>가 0에 가까워질수록 오차는 사라지고 실제 넓이와 같아집니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

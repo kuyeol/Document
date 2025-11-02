@@ -24,6 +24,8 @@
         <toc-element toc-title="CI/CD">
             <toc-element topic="Jenkins.md"/>
         </toc-element>
+ <toc-element topic="Logic_Gates-2025-11-02.md"/>
+
     </toc-element>
 
     <toc-element toc-title="Java">

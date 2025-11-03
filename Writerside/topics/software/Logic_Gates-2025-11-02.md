@@ -1,8 +1,6 @@
-# Logic_Gates
+# Logic Gates
 
-**[MODEL]** (2025. 11. 2. 오후 9:14:46)
-
-제공된 C 코드를 기반으로 이진수와 그레이 코드(Gray code) 간의 변환 알고리즘을 설명하고, 요청하신 "4비트 동시 변형(Four-bit-at-once variant)"을 자바 코드로 구현해 드리겠습니다.
+- 제공된 C 코드를 기반으로 이진수와 그레이 코드(Gray code) 간의 변환 알고리즘을 설명하고, 요청하신 "4비트 동시 변형(Four-bit-at-once variant)"을 자바 코드로 구현해 드리겠습니다.
 
 ### 그레이 코드(Gray Code) 변환
 

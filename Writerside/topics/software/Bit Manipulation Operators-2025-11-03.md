@@ -1,14 +1,4 @@
-﻿**[SYSTEM]** (2025. 11. 2. 오후 8:10:12)
-
-Welcome to Documentation Browser! You're currently browsing content from: "Docs Overview". Just ask me questions, or try one of the suggestions below to get started
-
----
-
-**[USER]** (2025. 11. 2. 오후 8:25:33)
-
-비트 연산 설명 챕터 검색
-
----
+# Bit Manipulation Operators
 
 **[MODEL]** (2025. 11. 2. 오후 8:25:33)
 

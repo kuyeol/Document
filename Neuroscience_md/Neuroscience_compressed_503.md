@@ -1,0 +1,9 @@
+The hypothalamus is located at the base of the forebrain, bounded by the optic chiasm rostrally and the midbrain tegmentum caudally.
+It forms the floor and ventral walls of the third ventricle and is continuous through the infundibular stalk with the posterior pituitary gland, as illustrated in Figure A.
+Given its central position in the brain and its proximity to the pituitary, it is not surprising that the hypothalamus integrates information from the forebrain, brainstem, spinal cord, and various intrinsic chemosensitive neurons.
+
+What is surprising about this structure is the remarkable diversity of homeostatic functions that are governed by this relatively small region of the forebrain.
+The diverse functions in which hypothalamic involvement is at least partially understood include: the control of blood flow (by promoting adjustments in cardiac output, vasomotor tone, blood osmolarity, and renal clearance, and by motivating drinking and salt consumption); the regulation of energy metabolism (by monitoring blood glucose levels and regulating feeding behavior, digestive functions, metabolic rate, and temperature); the regulation of reproductive activity (by influencing gender identity, sexual orientation and mating behavior and, in females, by governing menstrual cycles, pregnancy, and lactation); and the coordination of responses to threatening conditions (by governing the release of stress hormones, modulating the balance between sympathetic and parasympathetic tone, and influencing the regional distribution of blood flow).
+
+Despite the impressive scope of hypothalamic control, the individual components of the hypothalamus utilize similar physiological mechanisms to exert their influence over these many functions (Figure B).
+Thus, hypothalamic circuits receive sensory and contextual information, compare that information with biological set

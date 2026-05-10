@@ -1,3 +1,0 @@
-It is generally agreed that a key component of the reticular activating system is a group of cholinergic nuclei near the pons--midbrain junction that project to thalamocortical neurons (Figure 27.11).
-The relevant neurons in the nuclei are characterized by high discharge rates during waking and in REM sleep, and by quiescence during non-REM sleep.
-When stimulated, these nuclei cause “desynchronization” of the electroencephalogram (that is, a shift of EEG activity from high-amplitude, synchronized waves to lower-

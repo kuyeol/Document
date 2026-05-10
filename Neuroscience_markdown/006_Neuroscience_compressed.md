@@ -1,16 +1,15 @@
 Contents in Brief
 
-1.
-Studying the Nervous Systems of Humans and Other Animals 1
+1.Studying the Nervous Systems of Humans and Other Animals 1
 
 ## UNIT I NEURAL SIGNALING
 
-2.Electrical Signals of Nerve Cells 31
-3.Voltage-Dependent Membrane Permeability 47
-4.Channels and Transporters 69
-5.Synaptic Transmission 93
-6.Neurotransmitters, Receptors, and Their Effects 129
-7.Molecular Signaling within Neurons 165
+2. Electrical Signals of Nerve Cells 31
+3. Voltage-Dependent Membrane Permeability 47
+4. Channels and Transporters 69
+5. Synaptic Transmission 93
+6. Neurotransmitters, Receptors, and Their Effects 129
+7. Molecular Signaling within Neurons 165
 
 ## UNIT II SENSATION AND SENSORY PROCESSING
 

@@ -1,0 +1,20 @@
+arising from the brainstem, which is analogous to the preganglionic sympathetic outflow from the spinal cord, includes the Edinger-Westfall nucleus in the midbrain (which innervates the ciliary ganglion via the oculomotor nerve and mediates the diameter of the pupil in response to light; see Chapter 11), the superior and inferior salivatory nuclei in the pons and medulla (which innervate the salivary glands and tear glands, mediating salivary secretion and the production of tears), a visceral motor division of the nucleus ambiguus in the medulla and the dorsal motor nucleus of the vagus nerve, which is also in the medulla.
+The more dorsal part of the dorsal motor nucleus of the vagus nerve primarily governs glandular secretion via the parasympathetic ganglia located in the viscera of the thorax and abdomen, whereas the more ventral part of the nucleus controls the motor responses of the heart, lungs, and gut elicited by the vagus nerve (e.g.
+slowing of the heart rate and constricting the bronchioles).
+Neurons in the ventral-lateral part of the nucleus ambiguus also provide an important source of cardio-inhibitory innervation to the cardiac ganglia via the vagus nerve.
+In addition, other preganglionic neurons in the nucleus ambiguus innervate parasympathetic ganglia in the submandibular salivary glands and the mediastinum (a different division of the nucleus ambiguus provides branchiomotor innervation of striated muscle in the pharynx and larynx).
+The location of the parasympathetic brainstem nuclei is shown in Figure 20.3A and B.
+
+The sacral preganglionic innervation arises from neurons in the lateral gray matter of the sacral segments of the spinal cord, which are located in much the same position as the sympathetic preganglionic neurons in the intermediolateral column of the thoracic cord (Figure 20.3C,D).
+The axons from these neurons travel in the splanchnic nerves to innervate parasympathetic ganglia in the lower third of the colon, rectum, bladder, and reproductive organs.
+
+The parasympathetic ganglia innervated by preganglionic outflow from both cranial and sacral levels are in or near the end organs they serve.
+In this way they differ from the ganglionic targets of the sympathetic system (recall that both the paravertebral chain and prevertebral ganglia are located relatively far from their target organs; see Figure 20.1).
+An important anatomical difference between sympathetic and parasympathetic ganglia at the cellular level is that sympathetic ganglion cells tend to have extensive dendritic arbors and are, as might be expected from this arrangement, innervated by a large number of preganglionic fibers.
+Parasympathetic ganglion cells have few if any dendrites and consequently are each innervated by only one or a few preganglionic axons (see Box B in Chapter 22).
+
+The overall function of the parasympathetic system, as Gaskell, Langley, and later Cannon demonstrated, is generally opposite to that of the sympathetic system, serving to increase metabolic and other resources during periods when the animal's circumstances allow it to “rest and digest.” In contrast to the sympathetic functions enumerated earlier, the activity of the parasympathetic system constricts the pupils, slows the heart rate, and increases the peristaltic activity of the gut.
+At the same time, diminished activity in the sympathetic system allows the blood vessels of the skin and gut to dilate, the piloerector muscles to relax, and the outflow of catecholamines from the adrenal medulla to decrease.
+
+Although most organs do (as Gaskell surmised) receive innervation from both the sympathetic and parasympathetic divisions of the visceral motor system, some receive only sympathetic innervation.
+These exceptional targets include the sweat glands, the adrenal medulla, the piloerector muscles of the skin, and most arterial blood vessels (see Table 20.1).

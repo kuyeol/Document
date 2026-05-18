@@ -16,15 +16,11 @@ Figure 1.1: A "particle" constrained to move in one dimension under the influenc
 
 Quantum mechanics approaches this same problem quite differently. In this case what we're looking for is the particle's wave function, $\Psi (x,t)$, and we get it by solving the Schrödinger equation:
 
-$$
-i \hbar \frac {\partial \Psi}{\partial t} = - \frac {\hbar^ {2}}{2 m} \frac {\partial^ {2} \Psi}{\partial x ^ {2}} + V \Psi . \tag {1.1}
-$$
+$i \hbar \frac {\partial \Psi}{\partial t} = - \frac {\hbar^ {2}}{2 m} \frac {\partial^ {2} \Psi}{\partial x ^ {2}} + V \Psi . \tag {1.1}$
 
 Here $i$ is the square root of $-1$, and $\hbar$ is Planck's constant—or rather, his original constant $(b)$ divided by $2\pi$:
 
-$$
-\hbar = \frac {h}{2 \pi} = 1.054573 \times 10^{-34} \mathrm{J\,s}. \tag {1.2}
-$$
+$\hbar = \frac {h}{2 \pi} = 1.054573 \times 10^{-34} \mathrm{J\,s}. \tag {1.2}$
 
 The Schrödinger equation plays a role logically analogous to Newton's second law: Given suitable initial conditions (typically, $\Psi(x,0)$), the Schrödinger equation determines $\Psi(x,t)$ for all future time, just as, in classical mechanics, Newton's law determines $x(t)$ for all future time.²
 

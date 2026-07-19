@@ -1,0 +1,23 @@
+Box 9.5
+
+PATH OF DISCOVERY
+
+![page-25_1.jpeg](page-25_1.jpeg)
+
+## A Glimpse into the Retina
+
+*by John Dowling*
+
+![page-25_2.jpeg](page-25_2.jpeg)
+
+Much of my scientific life has been spent studying the functional organization of the vertebrate retina—how the retinal cells are wired, how they respond when the retina is illuminated, and how the retina processes visual information. What led me to undertake this research? As both an undergraduate and graduate student, I worked in George Wald's laboratory at Harvard. Wald discovered the role of vitamin A in vision (for which he won a Nobel Prize) and had long been interested in photoreceptor mechanisms. With Wald, I studied the effects of vitamin A deficiency on photoreceptors, which brought me to the question of how visual sensitivity relates to visual pigment levels in photoreceptors. In other words, what mechanisms underlie the loss of visual sensitivity in vitamin A deficiency, and does this relate to the sensitivity changes that occur during light and dark adaptation?
+
+This early work was carried out in the rat, and I found there is a relationship between visual pigment (rhodopsin) levels and the logarithm of visual sensitivity in both vitamin A deficiency and during dark adaptation. Rat retinas, however, possess mainly rod photoreceptors, and an obvious next question was whether a similar relationship between visual pigment levels and light sensitivity holds also for cones. I decided to test this by switching to ground squirrels, whose retinas possess mainly cones. Among other things, I was curious about how cone photoreceptors differ from rod photoreceptors, and so I examined the ground squirrel photoreceptors by electron microscopy. What caught my eye one day were the cone synaptic terminals and the realization that I could follow an occasional process from a synaptic terminal back to its cell of origin. Bipolar cell branches extended to the synaptic terminals, as expected, but I could also identify horizontal cell processes synapsing with the photoreceptors! This was new and exciting. Horizontal cells were very much a mystery then; indeed, some investigators thought they were glial cells, but the fact that they made synapses with the photoreceptors clearly indicated they were neurons.
+
+What, then, is the neuronal circuitry of the retina, and what is the role of the retinal interneurons—the
+
+horizontal and amacrine cells? This became an area of intense interest and study. I joined forces with Brian Boycott, and we explored the cellular (Brian) and synaptic organization (myself) of the outer and inner plexiform layers of the retina. We found that the photoreceptor and bipolar cell terminals make ribbon synapses onto multiple postsynaptic targets, whereas amacrine cells and at least some horizontal cell processes make conventional synapses on single postsynaptic elements. In addition to ground squirrel retinas, we examined monkey, human, cat, frog, and goldfish retinas, and they all showed basic similarities in retinal wiring.
+
+The next step was to record from the various retinal cells, and that work was undertaken in my laboratory by Frank Werblin, a graduate student with training in electrical engineering. We chose the mudpuppy retina as our animal because of its large cells, and soon Frank had recordings from all the retinal cell types. He confirmed the identity of the recorded cells by staining them intracellularly after the recording—a routine technique today, but then very difficult and on occasion messy. More than once, Frank emerged from the darkroom where the experiments were carried out covered with the blue dye we then used. What those experiments told us was that there are both ON-center and OFF-center bipolar cells in the retina and that bipolar cells have a center-surround receptive field organization, with the horizontal cells accounting for the antagonistic surround response. Further, many amacrine cells respond transiently to illumination, giving ON-OFF responses, and appear to be involved in detecting movement.
+
+These recordings, along with electron microscopic observations on the mudpuppy retina I made, enabled us to suggest the main pathways of information flow through the retina and the roles of the various cells and synapses. Many questions remained, many of which are being explored even today. However, being able to draw a diagram of the functional organization of the retina at that time, however imperfect and incomplete, was immensely satisfying, and it has encouraged, I like to believe, numerous additional studies on retinal mechanisms in the 35 years since.
